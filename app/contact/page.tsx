@@ -28,7 +28,7 @@ export default function Contact() {
                     >
                         <h1 className="text-3xl md:text-5xl font-light tracking-tight">Connect with <span className="font-semibold text-rose-400 italic">Fragods</span></h1>
                         <div className="w-20 h-1 bg-rose-500 mx-auto rounded-full"></div>
-                        <h2 className="text-sm md:text-base font-light text-stone-200 mt-6 uppercase tracking-[0.4em]">We&apos;d Love to Hear From You</h2>
+                        <h2 className="text-sm md:text-base font-light text-stone-200 mt-6 tracking-[0.4em]">We&apos;d Love to Hear From You</h2>
                     </motion.div>
                 </div>
             </section>
@@ -59,7 +59,7 @@ export default function Contact() {
                                         <MapPin className="w-8 h-8 text-rose-500 group-hover:text-white" />
                                     </div>
                                     <div>
-                                        <h4 className="text-xs font-bold text-stone-900 uppercase tracking-[0.3em] mb-4">Visit Our Essence</h4>
+                                        <h4 className="text-xs font-bold text-stone-900 tracking-[0.3em] mb-4">Visit Our Essence</h4>
                                         <p className="text-xl text-stone-600 font-light leading-relaxed">Fragods Headquarters,<br />Indore, Madhya Pradesh, India</p>
                                     </div>
                                 </div>
@@ -69,9 +69,9 @@ export default function Contact() {
                                         <Phone className="w-8 h-8 text-rose-500 group-hover:text-white" />
                                     </div>
                                     <div>
-                                        <h4 className="text-xs font-bold text-stone-900 uppercase tracking-[0.3em] mb-4">Call Our Experts</h4>
+                                        <h4 className="text-xs font-bold text-stone-900 tracking-[0.3em] mb-4">Call Our Experts</h4>
                                         <p className="text-xl text-stone-600 font-light">+91 91310 40182</p>
-                                        <p className="text-sm text-rose-500 font-bold mt-3 uppercase tracking-widest">Mon-Sun: 10:00 AM - 08:00 PM</p>
+                                        <p className="text-sm text-rose-500 font-bold mt-3 tracking-widest">Mon-Sun: 10:00 AM - 08:00 PM</p>
                                     </div>
                                 </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
                                         <Mail className="w-8 h-8 text-rose-500 group-hover:text-white" />
                                     </div>
                                     <div>
-                                        <h4 className="text-xs font-bold text-stone-900 uppercase tracking-[0.3em] mb-4">Email Us</h4>
+                                        <h4 className="text-xs font-bold text-stone-900 tracking-[0.3em] mb-4">Email Us</h4>
                                         <p className="text-xl text-stone-600 font-light">hello@fragods.com</p>
                                     </div>
                                 </div>
@@ -91,8 +91,8 @@ export default function Contact() {
                                     <Image src="/logo.png" alt="Logo" fill className="object-contain p-4" />
                                 </div>
                                 <div className="space-y-2">
-                                    <p className="text-2xl font-semibold text-stone-900 uppercase tracking-widest">Fragods</p>
-                                    <p className="text-sm text-stone-500 uppercase tracking-[0.2em] font-bold">Timeless Purity & Excellence.</p>
+                                    <p className="text-2xl font-semibold text-stone-900 tracking-widest">Fragods</p>
+                                    <p className="text-sm text-stone-500 tracking-[0.2em] font-bold">Timeless Purity & Excellence.</p>
                                 </div>
                             </div>
 
@@ -112,21 +112,21 @@ export default function Contact() {
                             <h3 className="text-2xl md:text-4xl font-light text-stone-900 mb-8 italic">Send a <span className="font-semibold text-rose-900">Message</span></h3>
                             <form className="space-y-8">
                                 <div className="space-y-4">
-                                    <label htmlFor="name" className="text-xs  font-bold text-stone-500 uppercase tracking-widest">Full Name</label>
+                                    <label htmlFor="name" className="text-xs  font-bold text-stone-500 tracking-widest">Full Name</label>
                                     <input type="text" id="name" className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5 pl-5 text-stone-900 focus:outline-none transition-all text-xl font-light" placeholder="Your Name" />
                                 </div>
 
                                 <div className="space-y-4">
-                                    <label htmlFor="email" className="text-xs font-bold text-stone-500 uppercase tracking-widest">Email Address</label>
+                                    <label htmlFor="email" className="text-xs font-bold text-stone-500 tracking-widest">Email Address</label>
                                     <input type="email" id="email" className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5  pl-5 text-stone-900 focus:outline-none transition-all text-xl font-light" placeholder="your@email.com" />
                                 </div>
 
                                 <div className="space-y-4">
-                                    <label htmlFor="message" className="text-xs font-bold text-stone-500 uppercase tracking-widest">Your Message</label>
+                                    <label htmlFor="message" className="text-xs font-bold text-stone-500 tracking-widest">Your Message</label>
                                     <textarea id="message" rows={4} className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5  pl-5 text-stone-900 focus:outline-none transition-all text-xl font-light resize-none" placeholder="How can we assist you?"></textarea>
                                 </div>
 
-                                <button type="button" className="w-full bg-rose-600 text-white font-bold rounded-2xl px-10 py-7 flex items-center justify-center gap-4 hover:bg-rose-700 shadow-[0_20px_40px_-10px_rgba(225,29,72,0.4)] hover:-translate-y-2 transition-all duration-300 uppercase tracking-[0.3em] text-xs">
+                                <button type="button" className="w-full bg-rose-600 text-white font-bold rounded-2xl px-10 py-7 flex items-center justify-center gap-4 hover:bg-rose-700 shadow-[0_20px_40px_-10px_rgba(225,29,72,0.4)] hover:-translate-y-2 transition-all duration-300 tracking-[0.3em] text-xs">
                                     Send Inquiry <Send className="w-5 h-5" />
                                 </button>
                             </form>

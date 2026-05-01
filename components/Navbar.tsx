@@ -55,7 +55,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-bold tracking-[0.15em] text-[13px] uppercase transition-all duration-500 relative group ${
+                className={`font-bold tracking-[0.15em] text-[13px] transition-all duration-500 relative group ${
                   scrolled ? "text-stone-900 hover:text-rose-600" : "text-white hover:text-rose-200"
                 }`}
               >
@@ -67,7 +67,7 @@ export default function Navbar() {
             ))}
             <Link 
               href="/product" 
-              className={`px-10 py-4 rounded-full font-bold text-[12px] uppercase tracking-[0.2em] flex items-center gap-3 transition-all duration-500 active:scale-95 shadow-2xl ${
+              className={`px-10 py-4 rounded-full font-bold text-[12px] tracking-[0.2em] flex items-center gap-3 transition-all duration-500 active:scale-95 shadow-2xl ${
                 scrolled 
                   ? "bg-rose-600 text-white hover:bg-rose-700 hover:shadow-rose-600/40" 
                   : "bg-white text-stone-900 hover:bg-stone-100 hover:shadow-white/20"
@@ -109,7 +109,7 @@ export default function Navbar() {
             <Link 
               href="/product"
               onClick={() => setIsOpen(false)}
-              className="w-full max-w-sm bg-rose-600 text-white px-10 py-6 rounded-3xl font-bold tracking-[0.3em] uppercase text-xs flex items-center justify-center gap-4 shadow-2xl"
+              className="w-full max-w-sm bg-rose-600 text-white px-10 py-6 rounded-3xl font-bold tracking-[0.3em] text-xs flex items-center justify-center gap-4 shadow-2xl"
             >
               <ShoppingBag className="w-5 h-5" />
               Shop Now

@@ -29,7 +29,7 @@ export default function WhatsAppWidget() {
         </div>
 
         {/* Tooltip */}
-        <span className="absolute right-full mr-4 bg-white text-stone-900 px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-xl border border-stone-100 pointer-events-none">
+        <span className="absolute right-full mr-4 bg-white text-stone-900 px-4 py-2 rounded-xl text-xs font-bold tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-xl border border-stone-100 pointer-events-none">
           Chat with us
         </span>
       </div>

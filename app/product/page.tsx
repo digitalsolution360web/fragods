@@ -82,11 +82,11 @@ export default function Product() {
               className="space-y-10 order-1 lg:order-2"
             >
               <div className="space-y-4">
-                <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] uppercase text-xs">
+                <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] text-xs">
                   <Droplets className="w-5 h-5" />
                   Skincare Essential
                 </div>
-                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight uppercase tracking-tighter italic">Rose Water <br /><span className="font-semibold text-rose-900">Gulab Jal</span></h3>
+                 <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Rose Water <br /><span className="font-semibold text-rose-900">Gulab Jal</span></h3>
                 <p className="text-lg text-stone-600 font-light leading-relaxed">
                   Pure & Refreshing Skin Care Essential. Our Rose Water is crafted using carefully selected rose petals to deliver a refreshing and soothing experience.
                 </p>
@@ -94,7 +94,7 @@ export default function Product() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-6">
                 <div className="space-y-6">
-                  <h4 className="font-bold text-stone-900 uppercase tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
+                  <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
                   <ul className="space-y-4">
                     {["Hydrates and refreshes skin instantly", "Tightens pores and tones naturally", "Soothes irritation and redness", "Enhances natural glow"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
@@ -105,7 +105,7 @@ export default function Product() {
                   </ul>
                 </div>
                 <div className="space-y-6">
-                  <h4 className="font-bold text-stone-900 uppercase tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
+                  <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
                   <ul className="space-y-4">
                     {["Spray directly on face", "Use as toner with cotton", "Mix with face packs"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
@@ -133,11 +133,11 @@ export default function Product() {
               className="space-y-10"
             >
               <div className="space-y-4">
-                <div className="flex items-center gap-3 text-blue-600 font-bold tracking-[0.3em] uppercase text-xs">
+                <div className="flex items-center gap-3 text-blue-600 font-bold tracking-[0.3em] text-xs">
                   <Droplets className="w-5 h-5" />
                   Hydration Hero
                 </div>
-                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight uppercase tracking-tighter italic">Pure <br /><span className="font-semibold text-blue-900">Glycerine</span></h3>
+                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Pure <br /><span className="font-semibold text-blue-900">Glycerine</span></h3>
                 <p className="text-lg text-stone-600 font-light leading-relaxed">
                   Deep Hydration for Soft & Smooth Skin. Our Glycerine helps lock in moisture, keeping skin soft and nourished.
                 </p>
@@ -145,7 +145,7 @@ export default function Product() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-6">
                 <div className="space-y-6">
-                  <h4 className="font-bold text-stone-900 uppercase tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
+                  <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
                   <ul className="space-y-4">
                     {["Long-lasting hydration", "Prevents dryness", "Improves skin softness", "Supports glowing skin"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
@@ -156,7 +156,7 @@ export default function Product() {
                   </ul>
                 </div>
                 <div className="space-y-6">
-                  <h4 className="font-bold text-stone-900 uppercase tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
+                  <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
                   <ul className="space-y-4">
                     {["Apply on dry areas", "Mix with rose water", "Use overnight"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
@@ -212,11 +212,11 @@ export default function Product() {
               className="space-y-10 order-1 lg:order-2"
             >
               <div className="space-y-4">
-                <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] uppercase text-xs">
+                <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] text-xs">
                   <Wind className="w-5 h-5" />
                   Luxury Fragrance
                 </div>
-                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight uppercase tracking-tighter italic">Exquisite <br /><span className="font-semibold text-rose-900">Perfumes</span></h3>
+                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Exquisite <br /><span className="font-semibold text-rose-900">Perfumes</span></h3>
                 <p className="text-lg text-stone-600 font-light leading-relaxed">
                   Long-Lasting Luxury Fragrance. Our perfumes deliver rich and elegant fragrance for every occasion.
                 </p>
@@ -224,7 +224,7 @@ export default function Product() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-6">
                 <div className="space-y-6">
-                  <h4 className="font-bold text-stone-900 uppercase tracking-widest text-xs border-b border-stone-100 pb-3">Fragrance Notes</h4>
+                  <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Fragrance Notes</h4>
                   <ul className="space-y-4">
                     {["Floral (Rose, Jasmine)", "Woody (Oud, Sandalwood)", "Fresh & Citrus"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
@@ -235,7 +235,7 @@ export default function Product() {
                   </ul>
                 </div>
                 <div className="space-y-6">
-                  <h4 className="font-bold text-stone-900 uppercase tracking-widest text-xs border-b border-stone-100 pb-3">Usage Tips</h4>
+                  <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Usage Tips</h4>
                   <ul className="space-y-4">
                     {["Apply on pulse points", "Do not rub after applying", "Store in a cool place"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
@@ -258,7 +258,7 @@ export default function Product() {
         </div>
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 relative z-10">
           <div className="text-center mb-15">
-            <h2 className="text-xs font-bold text-rose-500 tracking-[0.5em] uppercase mb-8">Quality Promise</h2>
+            <h2 className="text-xs font-bold text-rose-500 tracking-[0.5em] mb-8">Quality Promise</h2>
             <h3 className="text-3xl md:text-5xl font-light">Why Choose <span className="font-semibold text-rose-500">Our Products</span></h3>
             <div className="w-32 h-[2px] bg-rose-500 mx-auto mt-12 rounded-full"></div>
           </div>
@@ -281,7 +281,7 @@ export default function Product() {
                 <div className="w-20 h-20 bg-rose-500 rounded-[2rem] flex items-center justify-center mx-auto mb-8 shadow-2xl">
                   <feature.icon className="w-10 h-10 text-white" />
                 </div>
-                <h4 className="text-xl font-bold mb-4 uppercase tracking-widest leading-tight">{feature.title}</h4>
+                <h4 className="text-xl font-bold mb-4 tracking-widest leading-tight">{feature.title}</h4>
                 <p className="text-stone-400 font-light leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
@@ -299,15 +299,15 @@ export default function Product() {
             transition={{ duration: 1 }}
             className="space-y-5"
           >
-            <h2 className="text-3xl md:text-4xl font-light text-stone-900 leading-tight uppercase tracking-tighter">Upgrade Your <br /><span className="font-semibold text-rose-900 italic">Daily Routine</span></h2>
+            <h2 className="text-3xl md:text-4xl font-light text-stone-900 leading-tight tracking-tighter">Upgrade Your <br /><span className="font-semibold text-rose-900 italic">Daily Routine</span></h2>
             <p className="text-2xl md:text-3xl text-stone-500 font-light max-w-3xl mx-auto leading-relaxed">
               Experience the luxury of nature. Elevate your self-care ritual with Fragods today.
             </p>
             <div className="flex flex-wrap justify-center gap-10 pt-3">
-              <Link href="/contact" className="bg-rose-600 text-white px-16 py-8 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] shadow-2xl hover:bg-rose-700 hover:-translate-y-3 transition-all duration-500 flex items-center gap-4">
+              <Link href="/contact" className="bg-rose-600 text-white px-16 py-8 rounded-full font-bold tracking-[0.3em] text-[10px] shadow-2xl hover:bg-rose-700 hover:-translate-y-3 transition-all duration-500 flex items-center gap-4">
                 Shop Now <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/contact" className="bg-stone-900 text-white px-16 py-8 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] hover:bg-stone-800 hover:-translate-y-3 transition-all duration-500 flex items-center gap-4">
+              <Link href="/contact" className="bg-stone-900 text-white px-16 py-8 rounded-full font-bold tracking-[0.3em] text-[10px] hover:bg-stone-800 hover:-translate-y-3 transition-all duration-500 flex items-center gap-4">
                 Contact Us <ArrowRight className="w-5 h-5" />
               </Link>
             </div>

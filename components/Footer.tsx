@@ -59,7 +59,7 @@ export default function Footer() {
                     <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-12">
                         {/* Explore */}
                         <div className="space-y-8">
-                            <h4 className="text-[10px] font-bold text-white uppercase tracking-[0.4em] flex items-center gap-3">
+                            <h4 className="text-[10px] font-bold text-white tracking-[0.4em] flex items-center gap-3">
                                 <span className="w-8 h-[1px] bg-rose-500"></span>
                                 Explore
                             </h4>
@@ -71,7 +71,7 @@ export default function Footer() {
                                             className="text-stone-400 hover:text-rose-400 transition-colors flex items-center gap-4 group"
                                         >
                                             <ArrowRight className="w-4 h-4 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all" />
-                                            <span className="font-bold tracking-widest uppercase text-[12px]">{item}</span>
+                                            <span className="font-bold tracking-widest text-[12px]">{item}</span>
                                         </Link>
                                     </li>
                                 ))}
@@ -80,31 +80,31 @@ export default function Footer() {
 
                         {/* Contact */}
                         <div className="space-y-8">
-                            <h4 className="text-[10px] font-bold text-white uppercase tracking-[0.4em] flex items-center gap-3">
+                            <h4 className="text-[10px] font-bold text-white tracking-[0.4em] flex items-center gap-3">
                                 <span className="w-8 h-[1px] bg-rose-500"></span>
                                 Contact
                             </h4>
                             <div className="space-y-5">
                                 <div className="flex items-start gap-4 group">
                                     <MapPin className="w-5 h-5 text-rose-500 shrink-0" />
-                                    <span className="text-[12px] font-bold text-stone-400 leading-relaxed uppercase tracking-widest">
+                                    <span className="text-[12px] font-bold text-stone-400 leading-relaxed tracking-widest">
                                         Fragods HQ, Indore, MP, India
                                     </span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <Phone className="w-5 h-5 text-rose-500 shrink-0" />
-                                    <span className="text-[12px] font-bold text-stone-400 uppercase tracking-widest">+91 91310 40182</span>
+                                    <span className="text-[12px] font-bold text-stone-400 tracking-widest">+91 91310 40182</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <Mail className="w-5 h-5 text-rose-500 shrink-0" />
-                                    <span className="text-[12px] font-bold text-stone-400 uppercase tracking-widest">hello@fragods.com</span>
+                                    <span className="text-[12px] font-bold text-stone-400 tracking-widest">hello@fragods.com</span>
                                 </div>
                             </div>
                         </div>
 
                         {/* Newsletter */}
                         <div className="space-y-8">
-                            <h4 className="text-[10px] font-bold text-white uppercase tracking-[0.4em] flex items-center gap-3">
+                            <h4 className="text-[10px] font-bold text-white tracking-[0.4em] flex items-center gap-3">
                                 <span className="w-8 h-[1px] bg-rose-500"></span>
                                 Newsletter
                             </h4>
@@ -124,12 +124,12 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">
-                    <p className="text-[12px] font-bold text-stone-500 uppercase tracking-[0.3em] flex items-center gap-2">
+                    <p className="text-[12px] font-bold text-stone-500 tracking-[0.3em] flex items-center gap-2">
                         © {new Date().getFullYear()} Fragods. Crafted with <Heart className="w-4 h-4 text-rose-600 fill-rose-600" /> for Excellence.
                     </p>
                     <div className="flex gap-10">
-                        <Link href="#" className="text-[12px] font-bold text-stone-600 hover:text-rose-400 uppercase tracking-[0.3em] transition-colors">Privacy</Link>
-                        <Link href="#" className="text-[12px] font-bold text-stone-600 hover:text-rose-400 uppercase tracking-[0.3em] transition-colors">Terms</Link>
+                        <Link href="#" className="text-[12px] font-bold text-stone-600 hover:text-rose-400 tracking-[0.3em] transition-colors">Privacy</Link>
+                        <Link href="#" className="text-[12px] font-bold text-stone-600 hover:text-rose-400 tracking-[0.3em] transition-colors">Terms</Link>
                     </div>
                 </div>
             </div>

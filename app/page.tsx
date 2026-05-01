@@ -111,7 +111,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="max-w-4xl text-white space-y-10"
             >
-              <div className="inline-flex items-center gap-3 py-2.5 px-6 rounded-full bg-rose-500/20 border border-rose-500/30 backdrop-blur-md text-rose-100 text-xs font-bold tracking-[0.3em] uppercase shadow-2xl">
+              <div className="inline-flex items-center gap-3 py-2.5 px-6 rounded-full bg-rose-500/20 border border-rose-500/30 backdrop-blur-md text-rose-100 text-xs font-bold tracking-[0.3em] shadow-2xl">
                 <Sparkles className="w-4 h-4 text-rose-300" />
                 {slides[currentSlide].tagline}
               </div>
@@ -122,10 +122,10 @@ export default function Home() {
                 {slides[currentSlide].description}
               </p>
               <div className="flex flex-wrap pt-8 gap-8">
-                <Link href={slides[currentSlide].link} className="bg-rose-600 text-white px-14 py-6 rounded-full font-bold uppercase tracking-[0.2em] text-xs shadow-2xl hover:bg-rose-700 hover:shadow-rose-600/40 hover:-translate-y-2 transition-all duration-300 flex items-center gap-4">
+                <Link href={slides[currentSlide].link} className="bg-rose-600 text-white px-14 py-6 rounded-full font-bold tracking-[0.2em] text-xs shadow-2xl hover:bg-rose-700 hover:shadow-rose-600/40 hover:-translate-y-2 transition-all duration-300 flex items-center gap-4">
                   {slides[currentSlide].cta} <ArrowRight className="w-5 h-5" />
                 </Link>
-                <Link href="/product" className="bg-white/10 backdrop-blur-xl border border-white/20 text-white px-14 py-6 rounded-full font-bold uppercase tracking-[0.2em] text-xs hover:bg-white/20 hover:-translate-y-2 transition-all duration-300">
+                <Link href="/product" className="bg-white/10 backdrop-blur-xl border border-white/20 text-white px-14 py-6 rounded-full font-bold tracking-[0.2em] text-xs hover:bg-white/20 hover:-translate-y-2 transition-all duration-300">
                   Explore Products
                 </Link>
               </div>
@@ -173,7 +173,7 @@ export default function Home() {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 text-white/50">
-          <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-white/40">Scroll</span>
+          <span className="text-[10px] tracking-[0.5em] font-bold text-white/40">Scroll</span>
           <div className="w-[1px] h-12 bg-gradient-to-b from-white/40 to-transparent"></div>
         </div>
       </section>
@@ -189,10 +189,10 @@ export default function Home() {
             className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8"
           >
             <div className="max-w-3xl">
-              <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] uppercase mb-4">Discover</h2>
+              <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] mb-4">Discover</h2>
               <h3 className="text-2xl md:text-4xl font-light text-stone-900 leading-tight italic">Our Signature <br /><span className="font-semibold text-rose-900 italic">Collection</span></h3>
             </div>
-            <Link href="/product" className="group flex items-center gap-4 text-stone-900 font-bold uppercase tracking-[0.2em] text-xs border-b-2 border-stone-200 pb-2 hover:border-rose-500 transition-all duration-300">
+            <Link href="/product" className="group flex items-center gap-4 text-stone-900 font-bold tracking-[0.2em] text-xs border-b-2 border-stone-200 pb-2 hover:border-rose-500 transition-all duration-300">
               View All Products <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
             </Link>
           </motion.div>
@@ -214,10 +214,10 @@ export default function Home() {
               <div className="px-10 pb-12 flex-1 flex flex-col text-center">
                 <div className="flex items-center justify-center gap-3 text-rose-600 mb-5">
                   <Droplets className="w-5 h-5" />
-                  <span className="text-xs font-bold uppercase tracking-[0.3em]">Pure Skincare</span>
+                  <span className="text-xs font-bold tracking-[0.3em]">Pure Skincare</span>
                 </div>
                 <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Rose Water <br /><span className="text-lg font-light text-stone-400 italic">(Gulab Jal)</span></h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-rose-600 transition-all duration-300 shadow-xl">
+                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold tracking-widest text-[10px] hover:bg-rose-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
               </div>
@@ -233,10 +233,10 @@ export default function Home() {
               <div className="px-10 pb-12 flex-1 flex flex-col text-center">
                 <div className="flex items-center justify-center gap-3 text-blue-600 mb-5">
                   <Droplets className="w-5 h-5" />
-                  <span className="text-xs font-bold uppercase tracking-[0.3em]">Deep Hydration</span>
+                  <span className="text-xs font-bold tracking-[0.3em]">Deep Hydration</span>
                 </div>
                 <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Premium <br />Glycerine</h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-blue-600 transition-all duration-300 shadow-xl">
+                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold tracking-widest text-[10px] hover:bg-blue-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
               </div>
@@ -252,10 +252,10 @@ export default function Home() {
               <div className="px-10 pb-12 flex-1 flex flex-col text-center">
                 <div className="flex items-center justify-center gap-3 text-amber-600 mb-5">
                   <Sparkles className="w-5 h-5" />
-                  <span className="text-xs font-bold uppercase tracking-[0.3em]">Luxury Scent</span>
+                  <span className="text-xs font-bold tracking-[0.3em]">Luxury Scent</span>
                 </div>
                 <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Signature <br />Perfumes</h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-amber-600 transition-all duration-300 shadow-xl">
+                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold tracking-widest text-[10px] hover:bg-amber-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
               </div>
@@ -276,7 +276,7 @@ export default function Home() {
               className="space-y-16"
             >
               <div className="space-y-6">
-                <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] uppercase">The Vision</h2>
+                <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em]">The Vision</h2>
                 <h3 className="text-3xl md:text-5xl font-light text-stone-900 leading-tight">Your Daily <br /><span className="font-semibold text-rose-900 italic">Beauty & Fragrance</span> Partner</h3>
                 <p className="text-lg text-stone-600/90 leading-relaxed font-light max-w-2xl">
                   Fragods is passionate about creating products that combine purity, care, and elegance. Our range is designed to enhance your natural beauty while giving you a refreshing and long-lasting experience.
@@ -284,7 +284,7 @@ export default function Home() {
               </div>
 
               <div className="pt-10 border-t border-stone-300/50">
-                <h4 className="text-sm font-bold text-stone-900 uppercase tracking-[0.3em] mb-8">The Fragods Advantage</h4>
+                <h4 className="text-sm font-bold text-stone-900 tracking-[0.3em] mb-8">The Fragods Advantage</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                   {[
                     "Instant Skin Refreshment",
@@ -296,7 +296,7 @@ export default function Home() {
                       <div className="w-16 h-16 rounded-[1.5rem] bg-rose-50 flex items-center justify-center shrink-0 group-hover:bg-rose-500 group-hover:text-white transition-all duration-500">
                         <Sparkles className="w-7 h-7 text-rose-500 group-hover:text-white" />
                       </div>
-                      <span className="font-bold text-stone-800 text-sm tracking-widest uppercase leading-tight">{benefit}</span>
+                      <span className="font-bold text-stone-800 text-sm tracking-widest leading-tight">{benefit}</span>
                     </div>
                   ))}
                 </div>
@@ -336,7 +336,7 @@ export default function Home() {
       <section className="py-20 bg-white relative overflow-hidden text-center">
         <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20 relative z-10">
           <div className="mb-15">
-            <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.6em] uppercase mb-6">Why Fragods?</h2>
+            <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.6em] mb-6">Why Fragods?</h2>
             <h3 className="text-3xl md:text-5xl font-light text-stone-900">Crafting Excellence</h3>
           </div>
 
@@ -359,7 +359,7 @@ export default function Home() {
                 <div className="w-32 h-32 bg-stone-50 rounded-[4rem] flex items-center justify-center mx-auto mb-12 transform group-hover:scale-110 group-hover:bg-rose-50 group-hover:-rotate-6 transition-all duration-700 shadow-sm border border-stone-100">
                   <feature.icon className="w-12 h-12 text-rose-500" />
                 </div>
-                <h4 className="text-xs font-bold text-stone-800 uppercase tracking-[0.3em] leading-relaxed">{feature.title}</h4>
+                <h4 className="text-xs font-bold text-stone-800 tracking-[0.3em] leading-relaxed">{feature.title}</h4>
               </motion.div>
             ))}
           </div>
@@ -397,8 +397,8 @@ export default function Home() {
                 <div className="flex items-center gap-4 pt-3 border-t border-white/10">
                   <div className="w-12 h-12 rounded-2xl bg-rose-500/20 flex items-center justify-center font-bold text-rose-400 text-xl shadow-2xl">{testimonial.author[0]}</div>
                   <div>
-                    <h5 className="font-bold text-white uppercase tracking-[0.2em] text-xs">{testimonial.author}</h5>
-                    <p className="text-rose-500/50 text-[8px] uppercase tracking-[0.4em] mt-1 font-bold">Verified Buyer</p>
+                    <h5 className="font-bold text-white tracking-[0.2em] text-xs">{testimonial.author}</h5>
+                    <p className="text-rose-500/50 text-[8px] tracking-[0.4em] mt-1 font-bold">Verified Buyer</p>
                   </div>
                 </div>
               </motion.div>
@@ -426,10 +426,10 @@ export default function Home() {
               Discover the transformative power of pure skincare and luxury fragrances. Crafted for excellence.
             </p>
             <div className="flex flex-wrap justify-center gap-10">
-              <Link href="/product" className="bg-rose-600 text-white px-16 py-8 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] shadow-[0_25px_50px_-12px_rgba(255,100,100,0.5)] hover:bg-rose-700 hover:shadow-rose-600/70 hover:-translate-y-3 transition-all duration-500">
+              <Link href="/product" className="bg-rose-600 text-white px-16 py-8 rounded-full font-bold tracking-[0.3em] text-[10px] shadow-[0_25px_50px_-12px_rgba(255,100,100,0.5)] hover:bg-rose-700 hover:shadow-rose-600/70 hover:-translate-y-3 transition-all duration-500">
                 Shop Collection
               </Link>
-              <Link href="/contact" className="bg-transparent border-2 border-white/40 backdrop-blur-xl text-white px-16 py-8 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] hover:bg-white hover:text-stone-900 hover:border-white hover:-translate-y-3 transition-all duration-500">
+              <Link href="/contact" className="bg-transparent border-2 border-white/40 backdrop-blur-xl text-white px-16 py-8 rounded-full font-bold tracking-[0.3em] text-[10px] hover:bg-white hover:text-stone-900 hover:border-white hover:-translate-y-3 transition-all duration-500">
                 Get In Touch
               </Link>
             </div>

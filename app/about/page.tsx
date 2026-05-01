@@ -50,7 +50,7 @@ export default function About() {
           >
             <h1 className="text-3xl md:text-5xl font-light tracking-tight">About <span className="font-semibold text-rose-400 italic">Fragods</span></h1>
             <div className="w-20 h-1 bg-rose-500 mx-auto rounded-full"></div>
-            <h2 className="text-sm md:text-base font-light text-stone-200 mt-6 uppercase tracking-[0.4em]">Our Journey. Our Essence. Our Promise.</h2>
+            <h2 className="text-sm md:text-base font-light text-stone-200 mt-6 tracking-[0.4em]">Our Journey. Our Essence. Our Promise.</h2>
           </motion.div>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function About() {
               className="space-y-6"
             >
               <div className="space-y-4">
-                <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] uppercase">Who We Are</h2>
+                <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em]">Who We Are</h2>
                 <h3 className="text-3xl md:text-5xl font-light text-stone-900 leading-tight italic">Dedicated to <span className="font-semibold text-rose-900">Natural Purity.</span></h3>
                 <p className="text-lg text-stone-600 font-light leading-relaxed max-w-2xl">
                   Fragods is a skincare and fragrance brand dedicated to creating high-quality, natural, and effective products. Our range includes rose water, glycerine, and perfumes designed for freshness, hydration, and long-lasting fragrance.
@@ -76,12 +76,12 @@ export default function About() {
               <div className="flex items-center gap-10">
                 <div className="flex flex-col">
                   <span className="text-4xl font-bold text-stone-900 tracking-tighter">100%</span>
-                  <span className="text-xs font-bold text-stone-400 uppercase tracking-widest mt-2">Natural Purity</span>
+                  <span className="text-xs font-bold text-stone-400 tracking-widest mt-2">Natural Purity</span>
                 </div>
                 <div className="w-[1px] h-12 bg-stone-200"></div>
                 <div className="flex flex-col">
                   <span className="text-4xl font-bold text-stone-900 tracking-tighter">Premium</span>
-                  <span className="text-xs font-bold text-stone-400 uppercase tracking-widest mt-2">Quality Standards</span>
+                  <span className="text-xs font-bold text-stone-400 tracking-widest mt-2">Quality Standards</span>
                 </div>
               </div>
             </motion.div>
@@ -106,7 +106,7 @@ export default function About() {
       <section className="py-16 bg-[#faf9f8]">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20">
           <div className="text-center mb-12">
-            <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] uppercase mb-4">Our Philosophy</h2>
+            <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] mb-4">Our Philosophy</h2>
             <h3 className="text-3xl md:text-5xl font-light text-stone-900 leading-tight">Tradition Meets <span className="font-semibold text-rose-900 italic">Modern Formulation</span></h3>
           </div>
 
@@ -147,7 +147,7 @@ export default function About() {
                   <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition-all duration-500">
                     <item.icon className="w-5 h-5" />
                   </div>
-                  <h4 className="text-xl font-bold text-stone-900 uppercase tracking-tighter">{item.title}</h4>
+                  <h4 className="text-xl font-bold text-stone-900 tracking-tighter">{item.title}</h4>
                   <p className="text-stone-500 text-sm font-light leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
@@ -212,7 +212,7 @@ export default function About() {
               className="space-y-16"
             >
               <div className="space-y-6">
-                <h2 className="text-xs font-bold text-rose-600 tracking-[0.4em] uppercase">What Makes Us Different</h2>
+                <h2 className="text-xs font-bold text-rose-600 tracking-[0.4em]">What Makes Us Different</h2>
                 <h3 className="text-4xl md:text-6xl font-light text-stone-900 leading-tight">Focusing on <span className="font-semibold text-rose-900 italic">Purity & Affordability.</span></h3>
               </div>
 
@@ -225,7 +225,7 @@ export default function About() {
                 ].map((text, i) => (
                   <motion.div key={i} variants={fadeIn} className="flex items-center gap-6 p-8 bg-stone-50 rounded-[2.5rem] border border-stone-100 hover:bg-rose-50 hover:border-rose-200 transition-all duration-300 group">
                     <CheckCircle2 className="w-6 h-6 text-rose-500 shrink-0 group-hover:scale-110 transition-transform" />
-                    <span className="text-sm font-bold uppercase tracking-widest text-stone-700">{text}</span>
+                    <span className="text-sm font-bold tracking-widest text-stone-700">{text}</span>
                   </motion.div>
                 ))}
               </div>
@@ -255,21 +255,21 @@ export default function About() {
       {/* Product Promise */}
       <section className="py-32 bg-[#111] text-white">
         <div className="max-w-[1440px] mx-auto px-8 text-center">
-          <h2 className="text-xs font-bold text-rose-500 tracking-[0.5em] uppercase mb-16">Our Product Promise</h2>
+          <h2 className="text-xs font-bold text-rose-500 tracking-[0.5em] mb-16">Our Product Promise</h2>
           <div className="flex flex-wrap justify-center gap-12 md:gap-24">
             <div className="space-y-4">
               <h4 className="text-3xl font-light italic">Rose Water</h4>
-              <p className="text-stone-400 text-sm tracking-widest uppercase">Refreshing & Hydrating</p>
+              <p className="text-stone-400 text-sm tracking-widest">Refreshing & Hydrating</p>
             </div>
             <div className="w-[1px] h-16 bg-stone-800 hidden md:block"></div>
             <div className="space-y-4">
               <h4 className="text-3xl font-light italic">Glycerine</h4>
-              <p className="text-stone-400 text-sm tracking-widest uppercase">Deep Nourishment</p>
+              <p className="text-stone-400 text-sm tracking-widest">Deep Nourishment</p>
             </div>
             <div className="w-[1px] h-16 bg-stone-800 hidden md:block"></div>
             <div className="space-y-4">
               <h4 className="text-3xl font-light italic">Perfumes</h4>
-              <p className="text-stone-400 text-sm tracking-widest uppercase">Long-Lasting Fragrance</p>
+              <p className="text-stone-400 text-sm tracking-widest">Long-Lasting Fragrance</p>
             </div>
           </div>
         </div>
@@ -284,7 +284,7 @@ export default function About() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] uppercase">Our Commitment</h2>
+            <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em]">Our Commitment</h2>
             <h3 className="text-3xl md:text-5xl font-light text-stone-900 max-w-4xl mx-auto leading-tight italic">
               &quot;We are committed to quality, continuous improvement, and customer satisfaction.&quot;
             </h3>
@@ -293,7 +293,7 @@ export default function About() {
               <p className="text-xl md:text-3xl font-semibold text-rose-900 tracking-tighter">Enhancing Your Natural Beauty, Every Day.</p>
             </div>
             <div className="pt-6">
-              <Link href="/product" className="bg-stone-900 text-white px-12 py-6 rounded-full font-bold uppercase tracking-[0.3em] text-[10px] shadow-2xl hover:bg-rose-600 hover:-translate-y-3 transition-all duration-500 inline-flex items-center gap-4">
+              <Link href="/product" className="bg-stone-900 text-white px-12 py-6 rounded-full font-bold tracking-[0.3em] text-[10px] shadow-2xl hover:bg-rose-600 hover:-translate-y-3 transition-all duration-500 inline-flex items-center gap-4">
                 Explore Our Products <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
