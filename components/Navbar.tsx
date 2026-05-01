@@ -1,12 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ShoppingBag } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
     { name: "Home", href: "/" },
@@ -16,46 +25,68 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-black/95 backdrop-blur-md shadow-sm border-b border-zinc-800 transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20 items-center">
-          {/* Logo */}
-          <Link href="/" className="flex items-center group">
-            <div className="relative w-48 h-14 transition-opacity hover:opacity-90">
+    <nav className={`fixed w-full z-[100] transition-all duration-700 ${
+      scrolled 
+        ? "bg-white/95 backdrop-blur-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] py-4" 
+        : "bg-transparent py-8"
+    }`}>
+      <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20">
+        <div className="flex justify-between items-center">
+          {/* Logo Section */}
+          <Link href="/" className="flex items-center group relative z-10">
+            <div className="relative w-56 h-14 transition-all duration-500 group-hover:scale-105 active:scale-95">
               <Image
                 src="/logo.png"
-                alt="Brand Logo"
+                alt="Fragods Logo"
                 fill
-                className="object-contain object-left"
-                sizes="(max-width: 192px) 100vw, 192px"
+                className={`object-contain object-left transition-all duration-700 ${
+                  scrolled 
+                    ? "brightness-0 opacity-90" // Black logo on white background
+                    : "brightness-0 invert contrast-200" // White logo on dark background
+                }`}
+                priority
               />
             </div>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-16">
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-zinc-300 font-medium hover:text-white transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-white after:transition-all hover:after:w-full"
+                className={`font-bold tracking-[0.15em] text-[13px] uppercase transition-all duration-500 relative group ${
+                  scrolled ? "text-stone-900 hover:text-rose-600" : "text-white hover:text-rose-200"
+                }`}
               >
                 {link.name}
+                <span className={`absolute -bottom-2 left-0 w-0 h-[2px] transition-all duration-500 group-hover:w-full ${
+                  scrolled ? "bg-rose-600" : "bg-rose-400"
+                }`}></span>
               </Link>
             ))}
-            <button className="bg-white text-black px-5 py-2.5 rounded-full font-bold shadow-md hover:bg-zinc-200 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+            <Link 
+              href="/product" 
+              className={`px-10 py-4 rounded-full font-bold text-[12px] uppercase tracking-[0.2em] flex items-center gap-3 transition-all duration-500 active:scale-95 shadow-2xl ${
+                scrolled 
+                  ? "bg-rose-600 text-white hover:bg-rose-700 hover:shadow-rose-600/40" 
+                  : "bg-white text-stone-900 hover:bg-stone-100 hover:shadow-white/20"
+              }`}
+            >
               <ShoppingBag className="w-4 h-4" />
-              Order Now
-            </button>
+              Shop Now
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center relative z-10">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-zinc-300 hover:text-white focus:outline-none p-2 rounded-md hover:bg-zinc-800 transition-colors"
+              className={`p-3 rounded-2xl transition-all duration-300 ${
+                scrolled ? "text-stone-900 hover:bg-stone-100" : "text-white hover:bg-white/10"
+              }`}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
             </button>
           </div>
         </div>
@@ -63,24 +94,32 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-zinc-900 border-b border-zinc-800 shadow-xl absolute w-full animate-in slide-in-from-top-2 duration-200">
-          <div className="px-4 pt-2 pb-6 space-y-1">
+        <div className="lg:hidden fixed inset-0 bg-white/98 backdrop-blur-2xl z-50 animate-in fade-in slide-in-from-top-4 duration-500">
+          <div className="flex flex-col h-full items-center justify-center space-y-12 px-10">
             {links.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-3 rounded-md text-base font-medium text-zinc-300 hover:text-white hover:bg-zinc-800 transition-colors"
+                className="text-4xl font-light text-stone-900 tracking-tighter hover:text-rose-600 transition-all duration-300"
               >
                 {link.name}
               </Link>
             ))}
-            <div className="px-3 pt-4">
-              <button className="w-full bg-white text-black px-5 py-3 rounded-full font-bold shadow-md hover:bg-zinc-200 transition-colors flex items-center justify-center gap-2">
-                <ShoppingBag className="w-4 h-4" />
-                Order Now
-              </button>
-            </div>
+            <Link 
+              href="/product"
+              onClick={() => setIsOpen(false)}
+              className="w-full max-w-sm bg-rose-600 text-white px-10 py-6 rounded-3xl font-bold tracking-[0.3em] uppercase text-xs flex items-center justify-center gap-4 shadow-2xl"
+            >
+              <ShoppingBag className="w-5 h-5" />
+              Shop Now
+            </Link>
+            <button 
+              onClick={() => setIsOpen(false)}
+              className="p-4 rounded-full border border-stone-200 text-stone-400 hover:text-stone-900 transition-all"
+            >
+              <X className="w-8 h-8" />
+            </button>
           </div>
         </div>
       )}

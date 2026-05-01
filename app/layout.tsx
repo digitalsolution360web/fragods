@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aash Enterprises | Farsan Gold Premium Snacks",
-  description: "Authentic Farsan & Traditional Indian Snacks. Freshly prepared, delivering authentic taste and trusted quality.",
+  title: "Fragods | Pure Care & Timeless Fragrance",
+  description: "Experience the perfect blend of nature and luxury with Fragods premium skincare and fragrance essentials.",
 };
 
 export default function RootLayout({
@@ -27,13 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 flex flex-col min-h-screen selection:bg-amber-200 selection:text-amber-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#faf9f8] flex flex-col min-h-screen selection:bg-rose-200 selection:text-rose-900`}
       >
         <Navbar />
-        <main className="flex-grow flex flex-col pt-20">
+        <main className="flex-grow flex flex-col">
           {children}
         </main>
         <Footer />
+        <WhatsAppWidget />
       </body>
     </html>
   );
