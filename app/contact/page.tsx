@@ -10,11 +10,11 @@ export default function Contact() {
             {/* Header Banner */}
             <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <Image 
-                        src="/ab6.jpg" 
-                        alt="Contact Fragods" 
-                        fill 
-                        className="object-cover object-center" 
+                    <Image
+                        src="/ab6.jpg"
+                        alt="Contact Fragods"
+                        fill
+                        className="object-cover object-center"
                         priority
                     />
                     <div className="absolute inset-0 bg-stone-900/70 backdrop-blur-[3px]"></div>
@@ -104,7 +104,7 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, delay: 0.3 }}
-                            className="bg-white border border-stone-100 rounded-[4rem] p-12 md:p-20 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] relative"
+                            className="bg-white border border-stone-100 rounded-[20px] p-5 md:p-15 shadow-[0_50px_100px_-20px_rgba(0,0,0,0.1)] relative"
                         >
                             <div className="absolute top-10 right-10 opacity-5">
                                 <Sparkles className="w-24 h-24 text-rose-900" />
@@ -112,18 +112,18 @@ export default function Contact() {
                             <h3 className="text-2xl md:text-4xl font-light text-stone-900 mb-8 italic">Send a <span className="font-semibold text-rose-900">Message</span></h3>
                             <form className="space-y-8">
                                 <div className="space-y-4">
-                                    <label htmlFor="name" className="text-xs font-bold text-stone-500 uppercase tracking-widest">Full Name</label>
-                                    <input type="text" id="name" className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5 text-stone-900 focus:outline-none transition-all text-xl font-light" placeholder="Your Name" />
+                                    <label htmlFor="name" className="text-xs  font-bold text-stone-500 uppercase tracking-widest">Full Name</label>
+                                    <input type="text" id="name" className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5 pl-5 text-stone-900 focus:outline-none transition-all text-xl font-light" placeholder="Your Name" />
                                 </div>
 
                                 <div className="space-y-4">
                                     <label htmlFor="email" className="text-xs font-bold text-stone-500 uppercase tracking-widest">Email Address</label>
-                                    <input type="email" id="email" className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5 text-stone-900 focus:outline-none transition-all text-xl font-light" placeholder="your@email.com" />
+                                    <input type="email" id="email" className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5  pl-5 text-stone-900 focus:outline-none transition-all text-xl font-light" placeholder="your@email.com" />
                                 </div>
 
                                 <div className="space-y-4">
                                     <label htmlFor="message" className="text-xs font-bold text-stone-500 uppercase tracking-widest">Your Message</label>
-                                    <textarea id="message" rows={4} className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5 text-stone-900 focus:outline-none transition-all text-xl font-light resize-none" placeholder="How can we assist you?"></textarea>
+                                    <textarea id="message" rows={4} className="w-full bg-stone-50 border-b-2 border-stone-100 focus:border-rose-500 px-0 py-5  pl-5 text-stone-900 focus:outline-none transition-all text-xl font-light resize-none" placeholder="How can we assist you?"></textarea>
                                 </div>
 
                                 <button type="button" className="w-full bg-rose-600 text-white font-bold rounded-2xl px-10 py-7 flex items-center justify-center gap-4 hover:bg-rose-700 shadow-[0_20px_40px_-10px_rgba(225,29,72,0.4)] hover:-translate-y-2 transition-all duration-300 uppercase tracking-[0.3em] text-xs">

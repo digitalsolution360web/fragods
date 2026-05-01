@@ -69,7 +69,7 @@ export default function Product() {
               className="relative order-2 lg:order-1"
             >
               <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-stone-50">
-                <Image src="/p.jpg" alt="Rose Water" fill className="object-cover" />
+                <Image src="/p.jpg" alt="Rose Water" fill className="object-cover rounded-[20px]" />
               </div>
               <div className="absolute -top-10 -right-10 w-48 h-48 bg-rose-100 rounded-full blur-3xl opacity-50 -z-10"></div>
             </motion.div>
@@ -177,7 +177,7 @@ export default function Product() {
               className="relative"
             >
               <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-white">
-                <Image src="/p3.jpg" alt="Glycerine" fill className="object-cover" />
+                <Image src="/p3.jpg" alt="Glycerine" fill className="object-cover rounded-[20px]" />
               </div>
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
             </motion.div>
@@ -197,10 +197,10 @@ export default function Product() {
               className="relative grid grid-cols-2 gap-6 order-2 lg:order-1"
             >
               <div className="aspect-[3/4] rounded-[3rem] overflow-hidden shadow-xl border-8 border-stone-50">
-                <Image src="/p4.jpg" alt="Perfume 1" fill className="object-cover" />
+                <Image src="/p4.jpg" alt="Perfume 1" fill className="object-cover rounded-[20px]" />
               </div>
               <div className="aspect-[3/4] rounded-[3rem] overflow-hidden shadow-xl border-8 border-stone-50 translate-y-12">
-                <Image src="/p5.jpg" alt="Perfume 2" fill className="object-cover" />
+                <Image src="/p5.jpg" alt="Perfume 2" fill className="object-cover " />
               </div>
             </motion.div>
 
@@ -252,12 +252,12 @@ export default function Product() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 bg-[#111] text-white relative overflow-hidden">
+      <section className="py-10 bg-[#111] text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
           <Image src="/p6.jpg" alt="Background" fill className="object-cover grayscale" />
         </div>
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 relative z-10">
-          <div className="text-center mb-24">
+          <div className="text-center mb-15">
             <h2 className="text-xs font-bold text-rose-500 tracking-[0.5em] uppercase mb-8">Quality Promise</h2>
             <h3 className="text-3xl md:text-5xl font-light">Why Choose <span className="font-semibold text-rose-500">Our Products</span></h3>
             <div className="w-32 h-[2px] bg-rose-500 mx-auto mt-12 rounded-full"></div>
@@ -276,7 +276,7 @@ export default function Product() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15 }}
-                className="bg-white/5 backdrop-blur-xl p-12 rounded-[3.5rem] border border-white/10 text-center hover:bg-white/10 hover:-translate-y-4 transition-all duration-500"
+                className="bg-white/5 backdrop-blur-xl p-8 rounded-[3.5rem] border border-white/10 text-center hover:bg-white/10 hover:-translate-y-4 transition-all duration-500"
               >
                 <div className="w-20 h-20 bg-rose-500 rounded-[2rem] flex items-center justify-center mx-auto mb-8 shadow-2xl">
                   <feature.icon className="w-10 h-10 text-white" />
@@ -299,7 +299,7 @@ export default function Product() {
             transition={{ duration: 1 }}
             className="space-y-5"
           >
-            <h2 className="text-4xl md:text-6xl font-light text-stone-900 leading-tight uppercase tracking-tighter">Upgrade Your <br /><span className="font-semibold text-rose-900 italic">Daily Routine</span></h2>
+            <h2 className="text-3xl md:text-4xl font-light text-stone-900 leading-tight uppercase tracking-tighter">Upgrade Your <br /><span className="font-semibold text-rose-900 italic">Daily Routine</span></h2>
             <p className="text-2xl md:text-3xl text-stone-500 font-light max-w-3xl mx-auto leading-relaxed">
               Experience the luxury of nature. Elevate your self-care ritual with Fragods today.
             </p>

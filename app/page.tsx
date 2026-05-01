@@ -179,7 +179,7 @@ export default function Home() {
       </section>
 
       {/* Signature Collection Section */}
-      <section className="py-24 bg-white relative">
+      <section className="py-12 bg-white relative">
         <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20">
           <motion.div
             initial="hidden"
@@ -205,18 +205,18 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24"
           >
             {/* Product 1 */}
-            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[4rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,100,100,0.18)] hover:border-rose-100 transition-all duration-700">
-              <div className="relative h-[550px] w-full overflow-hidden p-8">
-                <div className="relative h-full w-full rounded-[3rem] overflow-hidden">
+            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,100,100,0.18)] hover:border-rose-100 transition-all duration-700">
+              <div className="relative h-[420px] w-full overflow-hidden p-6">
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
                   <Image src="/12.jpg" alt="Rose Water" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
-              <div className="px-14 pb-20 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-3 text-rose-600 mb-8">
+              <div className="px-10 pb-12 flex-1 flex flex-col text-center">
+                <div className="flex items-center justify-center gap-3 text-rose-600 mb-5">
                   <Droplets className="w-5 h-5" />
                   <span className="text-xs font-bold uppercase tracking-[0.3em]">Pure Skincare</span>
                 </div>
-                <h4 className="text-4xl font-semibold text-stone-900 mb-10 leading-tight">Rose Water <br /><span className="text-xl font-light text-stone-400 italic">(Gulab Jal)</span></h4>
+                <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Rose Water <br /><span className="text-lg font-light text-stone-400 italic">(Gulab Jal)</span></h4>
                 <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-rose-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
@@ -224,18 +224,18 @@ export default function Home() {
             </motion.div>
 
             {/* Product 2 */}
-            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[4rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(100,150,255,0.18)] hover:border-blue-100 transition-all duration-700">
-              <div className="relative h-[550px] w-full overflow-hidden p-8">
-                <div className="relative h-full w-full rounded-[3rem] overflow-hidden">
+            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(100,150,255,0.18)] hover:border-blue-100 transition-all duration-700">
+              <div className="relative h-[420px] w-full overflow-hidden p-6">
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
                   <Image src="/13.jpg" alt="Glycerine" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
-              <div className="px-14 pb-20 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-3 text-blue-600 mb-8">
+              <div className="px-10 pb-12 flex-1 flex flex-col text-center">
+                <div className="flex items-center justify-center gap-3 text-blue-600 mb-5">
                   <Droplets className="w-5 h-5" />
                   <span className="text-xs font-bold uppercase tracking-[0.3em]">Deep Hydration</span>
                 </div>
-                <h4 className="text-4xl font-semibold text-stone-900 mb-10 leading-tight">Premium <br />Glycerine</h4>
+                <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Premium <br />Glycerine</h4>
                 <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-blue-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
@@ -243,18 +243,18 @@ export default function Home() {
             </motion.div>
 
             {/* Product 3 */}
-            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[4rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,180,50,0.18)] hover:border-amber-100 transition-all duration-700">
-              <div className="relative h-[550px] w-full overflow-hidden p-8">
-                <div className="relative h-full w-full rounded-[3rem] overflow-hidden">
+            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,180,50,0.18)] hover:border-amber-100 transition-all duration-700">
+              <div className="relative h-[420px] w-full overflow-hidden p-6">
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
                   <Image src="/14.jpg" alt="Perfumes" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
-              <div className="px-14 pb-20 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-3 text-amber-600 mb-8">
+              <div className="px-10 pb-12 flex-1 flex flex-col text-center">
+                <div className="flex items-center justify-center gap-3 text-amber-600 mb-5">
                   <Sparkles className="w-5 h-5" />
                   <span className="text-xs font-bold uppercase tracking-[0.3em]">Luxury Scent</span>
                 </div>
-                <h4 className="text-4xl font-semibold text-stone-900 mb-10 leading-tight">Signature <br />Perfumes</h4>
+                <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Signature <br />Perfumes</h4>
                 <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-[10px] hover:bg-amber-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
@@ -367,9 +367,9 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-15 bg-stone-900 text-stone-100 relative overflow-hidden">
+      <section className="py-12 bg-stone-900 text-stone-100 relative overflow-hidden">
         <div className="absolute inset-0 bg-stone-950/40 z-0"></div>
-        <div className="max-w-[1600px] mx-auto px-4 sm:px-10 lg:px-10 relative mb-5 z-10">
+        <div className="max-w-[1600px] mx-auto px-4 sm:px-10 lg:px-10 relative mb-2 z-10">
           <h2 className="text-2xl md:text-5xl font-light mb-12 text-white text-center">Loved by <span className="font-semibold text-rose-500 italic">Many</span></h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16">
@@ -384,21 +384,21 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.2 }}
-                className="bg-white/[0.03] backdrop-blur-2xl p-8 rounded-[2rem] border border-white/5 flex flex-col justify-between hover:bg-white/[0.07] transition-all duration-700 group hover:-translate-x-4"
+                className="bg-white/[0.03] backdrop-blur-2xl p-6 rounded-[1.5rem] border border-white/5 flex flex-col justify-between hover:bg-white/[0.07] transition-all duration-700 group hover:-translate-x-4"
               >
                 <div>
-                  <div className="flex mb-10 text-rose-500">
-                    {[...Array(5)].map((_, idx) => <Star key={idx} className="w-7 h-7 fill-current" />)}
+                  <div className="flex mb-4 text-rose-500">
+                    {[...Array(5)].map((_, idx) => <Star key={idx} className="w-5 h-5 fill-current" />)}
                   </div>
-                  <p className="text-3xl text-stone-100/90 mb-10 font-light leading-relaxed italic">
+                  <p className="text-lg text-stone-100/90 mb-6 font-light leading-relaxed italic">
                     &quot;{testimonial.quote}&quot;
                   </p>
                 </div>
-                <div className="flex items-center gap-8 pt-5 border-t border-white/10">
-                  <div className="w-16 h-16 rounded-3xl bg-rose-500/20 flex items-center justify-center font-bold text-rose-400 text-2xl shadow-2xl">{testimonial.author[0]}</div>
+                <div className="flex items-center gap-4 pt-3 border-t border-white/10">
+                  <div className="w-12 h-12 rounded-2xl bg-rose-500/20 flex items-center justify-center font-bold text-rose-400 text-xl shadow-2xl">{testimonial.author[0]}</div>
                   <div>
-                    <h5 className="font-bold text-white uppercase tracking-[0.2em] text-sm">{testimonial.author}</h5>
-                    <p className="text-rose-500/50 text-[10px] uppercase tracking-[0.4em] mt-3 font-bold">Verified Buyer</p>
+                    <h5 className="font-bold text-white uppercase tracking-[0.2em] text-xs">{testimonial.author}</h5>
+                    <p className="text-rose-500/50 text-[8px] uppercase tracking-[0.4em] mt-1 font-bold">Verified Buyer</p>
                   </div>
                 </div>
               </motion.div>

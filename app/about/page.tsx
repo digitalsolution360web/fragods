@@ -56,7 +56,7 @@ export default function About() {
       </section>
 
       {/* Who We Are */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-16 bg-white relative overflow-hidden">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <motion.div
@@ -93,8 +93,8 @@ export default function About() {
               transition={{ duration: 1 }}
               className="relative"
             >
-              <div className="aspect-[4/5] rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-stone-50">
-                <Image src="/ab.jpg" alt="Our Heritage" fill className="object-cover" />
+              <div className="aspect-[4/5] rounded-[8rem] overflow-hidden shadow-2xl border-[15px] border-stone-50">
+                <Image src="/ab.jpg" alt="Our Heritage" fill className="object-cover rounded-[20px] " />
               </div>
               <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-rose-100 rounded-full blur-3xl opacity-50 -z-10"></div>
             </motion.div>
@@ -103,14 +103,14 @@ export default function About() {
       </section>
 
       {/* Our Philosophy */}
-      <section className="py-24 bg-[#faf9f8]">
+      <section className="py-16 bg-[#faf9f8]">
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] uppercase mb-4">Our Philosophy</h2>
             <h3 className="text-3xl md:text-5xl font-light text-stone-900 leading-tight">Tradition Meets <span className="font-semibold text-rose-900 italic">Modern Formulation</span></h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 icon: Leaf,
@@ -139,16 +139,16 @@ export default function About() {
                 transition={{ delay: i * 0.2 }}
                 className="group bg-white rounded-[3rem] overflow-hidden border border-stone-100 shadow-sm hover:shadow-2xl hover:-translate-y-4 transition-all duration-500"
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-56 overflow-hidden ">
                   <Image src={item.img} alt={item.title} fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
                   <div className="absolute inset-0 bg-rose-900/20 group-hover:bg-rose-900/10 transition-all"></div>
                 </div>
-                <div className="p-12 space-y-6">
-                  <div className="w-14 h-14 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition-all duration-500">
-                    <item.icon className="w-6 h-6" />
+                <div className="p-8 space-y-4">
+                  <div className="w-12 h-12 rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 group-hover:bg-rose-500 group-hover:text-white transition-all duration-500">
+                    <item.icon className="w-5 h-5" />
                   </div>
-                  <h4 className="text-2xl font-bold text-stone-900 uppercase tracking-tighter">{item.title}</h4>
-                  <p className="text-stone-500 font-light leading-relaxed">{item.desc}</p>
+                  <h4 className="text-xl font-bold text-stone-900 uppercase tracking-tighter">{item.title}</h4>
+                  <p className="text-stone-500 text-sm font-light leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>
             ))}
@@ -159,7 +159,7 @@ export default function About() {
       {/* Mission & Vision */}
       <section className="py-12 md:py-20 bg-stone-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10 grayscale">
-          <Image src="/ab10.jpg" alt="Background" fill className="object-cover" />
+          <Image src="/ab10.jpg" alt="Background" fill className="object-cover rounded-[20px]" />
         </div>
         <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-32">
@@ -239,19 +239,12 @@ export default function About() {
               className="relative grid grid-cols-2 gap-6"
             >
               <div className="space-y-6">
-                <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-                  <Image src="/ab4.jpg" alt="Process 1" fill className="object-cover" />
-                </div>
-                <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-                  <Image src="/ab5.jpg" alt="Process 2" fill className="object-cover" />
-                </div>
+
               </div>
               <div className="pt-24 space-y-6">
-                <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-                  <Image src="/ab7.jpg" alt="Process 3" fill className="object-cover" />
-                </div>
-                <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
-                  <Image src="/ab8.jpg" alt="Process 4" fill className="object-cover" />
+
+                <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl rounded-[20px] border-8 border-white">
+                  <Image src="/ab8.jpg" alt="Process 4" fill className="object-cover relative rounded-[20px] " />
                 </div>
               </div>
             </motion.div>
