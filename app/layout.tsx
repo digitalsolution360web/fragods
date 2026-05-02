@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
+import MobileContactBar from "@/components/MobileContactBar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -35,7 +36,14 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <WhatsAppWidget />
+        {/* Desktop only floating WhatsApp */}
+        <div className="hidden md:block">
+          <WhatsAppWidget />
+        </div>
+        {/* Mobile sticky bottom contact bar */}
+        <MobileContactBar />
+        {/* Add bottom padding on mobile so content isn't hidden behind sticky bar */}
+        <div className="block md:hidden h-11" />
       </body>
     </html>
   );

@@ -80,7 +80,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#faf9f8] font-sans overflow-x-hidden">
       {/* Hero Section Slider */}
-      <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden bg-[#faf9f8]">
+      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[#1c1917]">
         <AnimatePresence>
           <motion.div
             key={currentSlide}
@@ -97,7 +97,7 @@ export default function Home() {
               className="object-cover object-center scale-105 animate-slow-zoom"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20"></div>
           </motion.div>
         </AnimatePresence>
 
@@ -121,7 +121,7 @@ export default function Home() {
               <p className="text-lg md:text-xl text-stone-200/90 max-w-2xl leading-relaxed font-light">
                 {slides[currentSlide].description}
               </p>
-              <div className="flex flex-wrap pt-8 gap-8">
+              <div className="flex flex-wrap  gap-8">
                 <Link href={slides[currentSlide].link} className="bg-rose-600 text-white px-14 py-6 rounded-full font-bold tracking-[0.2em] text-xs shadow-2xl hover:bg-rose-700 hover:shadow-rose-600/40 hover:-translate-y-2 transition-all duration-300 flex items-center gap-4">
                   {slides[currentSlide].cta} <ArrowRight className="w-5 h-5" />
                 </Link>
@@ -179,14 +179,14 @@ export default function Home() {
       </section>
 
       {/* Signature Collection Section */}
-      <section className="py-12 bg-white relative">
+      <section className="py-8 md:py-12 bg-white relative">
         <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
-            className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8"
+            className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6"
           >
             <div className="max-w-3xl">
               <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] mb-4">Discover</h2>
@@ -202,22 +202,22 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24"
+            className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10"
           >
             {/* Product 1 */}
             <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,100,100,0.18)] hover:border-rose-100 transition-all duration-700">
-              <div className="relative h-[420px] w-full overflow-hidden p-6">
+              <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
                 <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
                   <Image src="/12.jpg" alt="Rose Water" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
-              <div className="px-10 pb-12 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-3 text-rose-600 mb-5">
-                  <Droplets className="w-5 h-5" />
+              <div className="px-6 pb-8 flex-1 flex flex-col text-center">
+                <div className="flex items-center justify-center gap-2 text-rose-600 mb-3">
+                  <Droplets className="w-4 h-4" />
                   <span className="text-xs font-bold tracking-[0.3em]">Pure Skincare</span>
                 </div>
-                <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Rose Water <br /><span className="text-lg font-light text-stone-400 italic">(Gulab Jal)</span></h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold tracking-widest text-[10px] hover:bg-rose-600 transition-all duration-300 shadow-xl">
+                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Rose Water <span className="text-sm font-light text-stone-400 italic">(Gulab Jal)</span></h4>
+                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-rose-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
               </div>
@@ -225,18 +225,18 @@ export default function Home() {
 
             {/* Product 2 */}
             <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(100,150,255,0.18)] hover:border-blue-100 transition-all duration-700">
-              <div className="relative h-[420px] w-full overflow-hidden p-6">
+              <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
                 <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
                   <Image src="/13.jpg" alt="Glycerine" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
-              <div className="px-10 pb-12 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-3 text-blue-600 mb-5">
-                  <Droplets className="w-5 h-5" />
+              <div className="px-6 pb-8 flex-1 flex flex-col text-center">
+                <div className="flex items-center justify-center gap-2 text-blue-600 mb-3">
+                  <Droplets className="w-4 h-4" />
                   <span className="text-xs font-bold tracking-[0.3em]">Deep Hydration</span>
                 </div>
-                <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Premium <br />Glycerine</h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold tracking-widest text-[10px] hover:bg-blue-600 transition-all duration-300 shadow-xl">
+                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Premium Glycerine</h4>
+                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-blue-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
               </div>
@@ -244,18 +244,18 @@ export default function Home() {
 
             {/* Product 3 */}
             <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,180,50,0.18)] hover:border-amber-100 transition-all duration-700">
-              <div className="relative h-[420px] w-full overflow-hidden p-6">
+              <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
                 <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
                   <Image src="/14.jpg" alt="Perfumes" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
-              <div className="px-10 pb-12 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-3 text-amber-600 mb-5">
-                  <Sparkles className="w-5 h-5" />
+              <div className="px-6 pb-8 flex-1 flex flex-col text-center">
+                <div className="flex items-center justify-center gap-2 text-amber-600 mb-3">
+                  <Sparkles className="w-4 h-4" />
                   <span className="text-xs font-bold tracking-[0.3em]">Luxury Scent</span>
                 </div>
-                <h4 className="text-2xl font-bold text-stone-900 mb-6 leading-tight">Signature <br />Perfumes</h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-4 rounded-full font-bold tracking-widest text-[10px] hover:bg-amber-600 transition-all duration-300 shadow-xl">
+                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Signature Perfumes</h4>
+                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-amber-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
               </div>
@@ -265,15 +265,15 @@ export default function Home() {
       </section>
 
       {/* Visionary Section */}
-      <section className="py-24 bg-[#f4f1ed]">
+      <section className="py-10 md:py-24 bg-[#f4f1ed]">
         <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-32 lg:gap-48 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-48 items-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="space-y-16"
+              className="space-y-6"
             >
               <div className="space-y-6">
                 <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em]">The Vision</h2>
@@ -285,16 +285,16 @@ export default function Home() {
 
               <div className="pt-10 border-t border-stone-300/50">
                 <h4 className="text-sm font-bold text-stone-900 tracking-[0.3em] mb-8">The Fragods Advantage</h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
                     "Instant Skin Refreshment",
                     "Long-Lasting Hydration",
                     "Natural Glow Enhancement",
                     "Confidence-Boosting Fragrance"
                   ].map((benefit, idx) => (
-                    <div key={idx} className="flex items-center gap-8 bg-white p-10 rounded-[3rem] shadow-sm border border-stone-200/50 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)] hover:border-rose-200 transition-all duration-500 group">
-                      <div className="w-16 h-16 rounded-[1.5rem] bg-rose-50 flex items-center justify-center shrink-0 group-hover:bg-rose-500 group-hover:text-white transition-all duration-500">
-                        <Sparkles className="w-7 h-7 text-rose-500 group-hover:text-white" />
+                    <div key={idx} className="flex items-center gap-4 bg-white p-5 rounded-2xl shadow-sm border border-stone-200/50 hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.1)] hover:border-rose-200 transition-all duration-500 group">
+                      <div className="w-10 h-10 rounded-xl bg-rose-50 flex items-center justify-center shrink-0 group-hover:bg-rose-500 group-hover:text-white transition-all duration-500">
+                        <Sparkles className="w-5 h-5 text-rose-500 group-hover:text-white" />
                       </div>
                       <span className="font-bold text-stone-800 text-sm tracking-widest leading-tight">{benefit}</span>
                     </div>
@@ -333,14 +333,14 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-white relative overflow-hidden text-center">
+      <section className="py-8 md:py-20 bg-white relative overflow-hidden text-center">
         <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20 relative z-10">
           <div className="mb-15">
             <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.6em] mb-6">Why Fragods?</h2>
             <h3 className="text-3xl md:text-5xl font-light text-stone-900">Crafting Excellence</h3>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-16 lg:gap-24">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-24">
             {[
               { icon: Leaf, title: "Natural & Skin-Friendly" },
               { icon: Sparkles, title: "Premium Quality" },
@@ -356,8 +356,8 @@ export default function Home() {
                 transition={{ delay: i * 0.15 }}
                 className="group"
               >
-                <div className="w-32 h-32 bg-stone-50 rounded-[4rem] flex items-center justify-center mx-auto mb-12 transform group-hover:scale-110 group-hover:bg-rose-50 group-hover:-rotate-6 transition-all duration-700 shadow-sm border border-stone-100">
-                  <feature.icon className="w-12 h-12 text-rose-500" />
+                <div className="w-16 h-16 md:w-32 md:h-32 bg-stone-50 rounded-[2rem] md:rounded-[4rem] flex items-center justify-center mx-auto mb-4 md:mb-12 transform group-hover:scale-110 group-hover:bg-rose-50 group-hover:-rotate-6 transition-all duration-700 shadow-sm border border-stone-100">
+                  <feature.icon className="w-6 h-6 md:w-12 md:h-12 text-rose-500" />
                 </div>
                 <h4 className="text-xs font-bold text-stone-800 tracking-[0.3em] leading-relaxed">{feature.title}</h4>
               </motion.div>
@@ -367,10 +367,10 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 bg-stone-900 text-stone-100 relative overflow-hidden">
+      <section className="py-8 md:py-12 bg-stone-900 text-stone-100 relative overflow-hidden">
         <div className="absolute inset-0 bg-stone-950/40 z-0"></div>
         <div className="max-w-[1600px] mx-auto px-4 sm:px-10 lg:px-10 relative mb-2 z-10">
-          <h2 className="text-2xl md:text-5xl font-light mb-12 text-white text-center">Loved by <span className="font-semibold text-rose-500 italic">Many</span></h2>
+          <h2 className="text-xl md:text-5xl font-light mb-6 md:mb-12 text-white text-center">Loved by <span className="font-semibold text-rose-500 italic">Many</span></h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16">
             {[
@@ -408,7 +408,7 @@ export default function Home() {
       </section>
 
       {/* Final Call to Action */}
-      <section className="py-16 md:py-24 relative overflow-hidden flex items-center justify-center text-center">
+      <section className="py-10 md:py-24 relative overflow-hidden flex items-center justify-center text-center">
         <div className="absolute inset-0 z-0">
           <Image src="/20.jpg" alt="Refresh your routine" fill className="object-cover" />
           <div className="absolute inset-0 bg-stone-900/85 backdrop-blur-sm"></div>
@@ -421,11 +421,11 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="max-w-6xl mx-auto"
           >
-            <h2 className="text-4xl md:text-6xl font-light mb-5 text-white leading-tight">Elevate Your <br /><span className="font-semibold text-rose-500 italic">Daily Ritual</span></h2>
+            <h2 className="text-3xl md:text-6xl font-light mb-4 md:mb-5 text-white leading-tight">Elevate Your <br /><span className="font-semibold text-rose-500 italic">Daily Ritual</span></h2>
             <p className="text-lg md:text-xl text-rose-100/80 font-light mb-10 leading-relaxed max-w-4xl mx-auto">
               Discover the transformative power of pure skincare and luxury fragrances. Crafted for excellence.
             </p>
-            <div className="flex flex-wrap justify-center gap-10">
+            <div className="flex flex-wrap justify-center gap-5">
               <Link href="/product" className="bg-rose-600 text-white px-16 py-8 rounded-full font-bold tracking-[0.3em] text-[10px] shadow-[0_25px_50px_-12px_rgba(255,100,100,0.5)] hover:bg-rose-700 hover:shadow-rose-600/70 hover:-translate-y-3 transition-all duration-500">
                 Shop Collection
               </Link>

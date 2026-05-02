@@ -27,14 +27,14 @@ export default function Navbar() {
   return (
     <nav className={`fixed w-full z-[100] transition-all duration-700 ${
       scrolled 
-        ? "bg-white/95 backdrop-blur-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] py-4" 
-        : "bg-transparent py-8"
+        ? "bg-white/95 backdrop-blur-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] py-2 md:py-4" 
+        : "bg-transparent py-3 md:py-8"
     }`}>
       <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex justify-between items-center">
           {/* Logo Section */}
           <Link href="/" className="flex items-center group relative z-10">
-            <div className="relative w-56 h-14 transition-all duration-500 group-hover:scale-105 active:scale-95">
+            <div className="relative w-36 h-9 md:w-56 md:h-14 transition-all duration-500 group-hover:scale-105 active:scale-95">
               <Image
                 src="/logo.png"
                 alt="Fragods Logo"
@@ -86,7 +86,7 @@ export default function Navbar() {
                 scrolled ? "text-stone-900 hover:bg-stone-100" : "text-white hover:bg-white/10"
               }`}
             >
-              {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+              {isOpen ? <X className="h-6 w-6 md:h-8 md:w-8" /> : <Menu className="h-6 w-6 md:h-8 md:w-8" />}
             </button>
           </div>
         </div>

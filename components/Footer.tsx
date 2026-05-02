@@ -132,6 +132,7 @@ export default function Footer() {
                         <Link href="#" className="text-[12px] font-bold text-stone-600 hover:text-rose-400 tracking-[0.3em] transition-colors">Terms</Link>
                     </div>
                 </div>
+
             </div>
         </footer>
     );
