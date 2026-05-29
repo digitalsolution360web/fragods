@@ -207,16 +207,16 @@ export default function Home() {
             {/* Product 1 */}
             <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,100,100,0.18)] hover:border-rose-100 transition-all duration-700">
               <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
-                <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
-                  <Image src="/12.jpg" alt="Rose Water" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden bg-[#f9f9f9]">
+                  <Image src="/fragods-air-freshner.webp" alt="Air Freshener" fill className="object-contain p-4 group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
               <div className="px-6 pb-8 flex-1 flex flex-col text-center">
                 <div className="flex items-center justify-center gap-2 text-rose-600 mb-3">
-                  <Droplets className="w-4 h-4" />
-                  <span className="text-xs font-bold tracking-[0.3em]">Pure Skincare</span>
+                  <Sparkles className="w-4 h-4" />
+                  <span className="text-xs font-bold tracking-[0.3em]">Refreshing Aroma</span>
                 </div>
-                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Rose Water <span className="text-sm font-light text-stone-400 italic">(Gulab Jal)</span></h4>
+                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Air Freshener <span className="text-sm font-light text-stone-400 italic">(Long Lasting)</span></h4>
                 <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-rose-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
@@ -226,16 +226,16 @@ export default function Home() {
             {/* Product 2 */}
             <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(100,150,255,0.18)] hover:border-blue-100 transition-all duration-700">
               <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
-                <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
-                  <Image src="/13.jpg" alt="Glycerine" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden bg-[#f9f9f9]">
+                  <Image src="/fragods-liquid-paraffin.webp" alt="Liquid Paraffin" fill className="object-contain p-4 group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
               <div className="px-6 pb-8 flex-1 flex flex-col text-center">
                 <div className="flex items-center justify-center gap-2 text-blue-600 mb-3">
                   <Droplets className="w-4 h-4" />
-                  <span className="text-xs font-bold tracking-[0.3em]">Deep Hydration</span>
+                  <span className="text-xs font-bold tracking-[0.3em]">Pure Formulation</span>
                 </div>
-                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Premium Glycerine</h4>
+                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Liquid Paraffin</h4>
                 <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-blue-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
@@ -245,16 +245,16 @@ export default function Home() {
             {/* Product 3 */}
             <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,180,50,0.18)] hover:border-amber-100 transition-all duration-700">
               <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
-                <div className="relative h-full w-full rounded-[2rem] overflow-hidden">
-                  <Image src="/14.jpg" alt="Perfumes" fill className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+                <div className="relative h-full w-full rounded-[2rem] overflow-hidden bg-[#f9f9f9]">
+                  <Image src="/fragods-oucellent.webp" alt="Fragods Oucellent" fill className="object-contain p-4 group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
                 </div>
               </div>
               <div className="px-6 pb-8 flex-1 flex flex-col text-center">
                 <div className="flex items-center justify-center gap-2 text-amber-600 mb-3">
                   <Sparkles className="w-4 h-4" />
-                  <span className="text-xs font-bold tracking-[0.3em]">Luxury Scent</span>
+                  <span className="text-xs font-bold tracking-[0.3em]">Luxury Range</span>
                 </div>
-                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Signature Perfumes</h4>
+                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Fragods Oucellent</h4>
                 <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-amber-600 transition-all duration-300 shadow-xl">
                   Product Details
                 </Link>
@@ -310,8 +310,8 @@ export default function Home() {
               transition={{ duration: 1 }}
               className="relative"
             >
-              <div className="aspect-[4/5] rounded-[6rem] overflow-hidden relative shadow-[0_60px_120px_-20px_rgba(0,0,0,0.25)] border-[20px] border-white">
-                <Image src="/15.jpg" alt="About Fragods" fill className="object-cover" />
+              <div className="aspect-[4/5] rounded-[6rem] overflow-hidden relative shadow-[0_60px_120px_-20px_rgba(0,0,0,0.25)] border-[20px] border-white bg-white">
+                <Image src="/fragods-spana.webp" alt="About Fragods Spana" fill className="object-contain p-4" />
               </div>
               {/* Floating Review Card */}
               <div className="absolute -bottom-20 -left-20 bg-white/90 backdrop-blur-3xl p-14 rounded-[5rem] shadow-2xl max-w-lg hidden xl:block border border-white/50">
@@ -374,9 +374,9 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16">
             {[
-              { quote: "Amazing quality rose water! My skin feels so fresh and hydrated throughout the day.", author: "Sophia R." },
-              { quote: "The glycerine is a lifesaver for my dry skin. It's so smooth and non-sticky.", author: "James L." },
-              { quote: "The perfumes are incredibly long-lasting. I get compliments every single time I wear them.", author: "Elena M." }
+              { quote: "Amazing quality products! The air freshener lasts long and keeps my drawing room fresh throughout the day.", author: "Sophia R." },
+              { quote: "The perfumes are incredibly long-lasting. I get compliments every single time I wear them.", author: "Elena M." },
+              { quote: "The liquid paraffin is excellent for my skin care routine. Highly recommended.", author: "James L." }
             ].map((testimonial, i) => (
               <motion.div
                 key={i}

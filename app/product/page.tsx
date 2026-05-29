@@ -32,13 +32,13 @@ export default function Product() {
       <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/pbanner.jpg"
+            src="/fragods-spana.webp"
             alt="Our Products Banner"
             fill
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-stone-900/60 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-stone-900/60 backdrop-blur-[3px]"></div>
         </div>
         <div className="relative z-10 max-w-[1440px] mx-auto px-6 text-center text-white">
           <motion.div
@@ -68,8 +68,8 @@ export default function Product() {
               variants={slideIn}
               className="relative order-2 lg:order-1"
             >
-              <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-stone-50">
-                <Image src="/p.jpg" alt="Rose Water" fill className="object-cover rounded-[20px]" />
+              <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-stone-50 bg-[#f9f9f9]">
+                <Image src="/fragods-air-freshner.webp" alt="Air Freshener" fill className="object-contain p-6 rounded-[20px]" />
               </div>
               <div className="absolute -top-10 -right-10 w-48 h-48 bg-rose-100 rounded-full blur-3xl opacity-50 -z-10"></div>
             </motion.div>
@@ -83,12 +83,12 @@ export default function Product() {
             >
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] text-xs">
-                  <Droplets className="w-5 h-5" />
-                  Skincare Essential
+                  <Wind className="w-5 h-5" />
+                  Home Fragrance
                 </div>
-                 <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Rose Water <br /><span className="font-semibold text-rose-900">Gulab Jal</span></h3>
+                 <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Air Freshener <br /><span className="font-semibold text-rose-900">Refreshing Aura</span></h3>
                 <p className="text-lg text-stone-600 font-light leading-relaxed">
-                  Pure & Refreshing Skin Care Essential. Our Rose Water is crafted using carefully selected rose petals to deliver a refreshing and soothing experience.
+                  Transform your space with our premium Air Freshener. Elegantly formulated to neutralize odors and replace them with a delightful, long-lasting scent.
                 </p>
               </div>
 
@@ -96,7 +96,7 @@ export default function Product() {
                 <div className="space-y-6">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
                   <ul className="space-y-4">
-                    {["Hydrates and refreshes skin instantly", "Tightens pores and tones naturally", "Soothes irritation and redness", "Enhances natural glow"].map((item, i) => (
+                    {["Eliminates odors instantly", "Long-lasting fragrance", "Creates a welcoming atmosphere", "Safe for daily indoor use"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <CheckCircle2 className="w-5 h-5 text-rose-500 shrink-0" />
                         <span>{item}</span>
@@ -107,7 +107,7 @@ export default function Product() {
                 <div className="space-y-6">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
                   <ul className="space-y-4">
-                    {["Spray directly on face", "Use as toner with cotton", "Mix with face packs"].map((item, i) => (
+                    {["Shake well before use", "Spray towards the center of room", "Avoid direct contact with fabrics"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <Zap className="w-5 h-5 text-amber-500 shrink-0" />
                         <span>{item}</span>
@@ -135,11 +135,11 @@ export default function Product() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-blue-600 font-bold tracking-[0.3em] text-xs">
                   <Droplets className="w-5 h-5" />
-                  Hydration Hero
+                  Premium Quality
                 </div>
-                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Pure <br /><span className="font-semibold text-blue-900">Glycerine</span></h3>
+                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Liquid <br /><span className="font-semibold text-blue-900">Paraffin</span></h3>
                 <p className="text-lg text-stone-600 font-light leading-relaxed">
-                  Deep Hydration for Soft & Smooth Skin. Our Glycerine helps lock in moisture, keeping skin soft and nourished.
+                  Highly refined Liquid Paraffin crafted for purity and consistency. Ideal for specialized treatments and retaining extreme skin moisture.
                 </p>
               </div>
 
@@ -147,7 +147,7 @@ export default function Product() {
                 <div className="space-y-6">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
                   <ul className="space-y-4">
-                    {["Long-lasting hydration", "Prevents dryness", "Improves skin softness", "Supports glowing skin"].map((item, i) => (
+                    {["Acts as a strong emollient", "Prevents severe skin dryness", "Protects against moisture loss", "Highly refined and pure"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0" />
                         <span>{item}</span>
@@ -158,7 +158,7 @@ export default function Product() {
                 <div className="space-y-6">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
                   <ul className="space-y-4">
-                    {["Apply on dry areas", "Mix with rose water", "Use overnight"].map((item, i) => (
+                    {["Apply to extremely dry patches", "Use as directed by experts", "Mix with creams if required"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <Zap className="w-5 h-5 text-amber-500 shrink-0" />
                         <span>{item}</span>
@@ -176,8 +176,8 @@ export default function Product() {
               variants={fadeIn}
               className="relative"
             >
-              <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-white">
-                <Image src="/p3.jpg" alt="Glycerine" fill className="object-cover rounded-[20px]" />
+              <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-white bg-[#f9f9f9]">
+                <Image src="/fragods-liquid-paraffin.webp" alt="Liquid Paraffin" fill className="object-contain p-6 rounded-[20px]" />
               </div>
               <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
             </motion.div>
@@ -194,14 +194,21 @@ export default function Product() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={slideIn}
-              className="relative grid grid-cols-2 gap-6 order-2 lg:order-1"
+              className="relative order-2 lg:order-1"
             >
-              <div className="aspect-[3/4] rounded-[3rem] overflow-hidden shadow-xl border-8 border-stone-50">
-                <Image src="/p4.jpg" alt="Perfume 1" fill className="object-cover rounded-[20px]" />
+              <div className="aspect-[4/3] sm:aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-stone-50 bg-[#fbfbfb] flex items-center justify-center relative group p-6">
+                <div className="absolute inset-0 bg-gradient-to-tr from-rose-50/50 via-stone-50/50 to-stone-100/50 opacity-80"></div>
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-br from-rose-200/30 to-amber-100/30 rounded-full blur-3xl"></div>
+                
+                <div className="relative w-[45%] h-[85%] z-10 transform -translate-y-4 group-hover:scale-105 group-hover:-translate-y-6 transition-all duration-700 drop-shadow-2xl">
+                  <Image src="/fragods-original-perfume.webp" alt="Original Perfume" fill className="object-contain" />
+                </div>
+                
+                <div className="relative w-[45%] h-[80%] z-20 transform translate-y-6 -ml-6 group-hover:scale-105 group-hover:translate-y-4 group-hover:translate-x-2 transition-all duration-700 drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)]">
+                  <Image src="/fragods-oucellent.webp" alt="Oucellent" fill className="object-contain" />
+                </div>
               </div>
-              <div className="aspect-[3/4] rounded-[3rem] overflow-hidden shadow-xl border-8 border-stone-50 translate-y-12">
-                <Image src="/p5.jpg" alt="Perfume 2" fill className="object-cover " />
-              </div>
+              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-rose-100/50 rounded-full blur-3xl opacity-60 -z-10"></div>
             </motion.div>
 
             <motion.div
@@ -214,11 +221,11 @@ export default function Product() {
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] text-xs">
                   <Wind className="w-5 h-5" />
-                  Luxury Fragrance
+                  Luxury Fragrance & Oils
                 </div>
-                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Exquisite <br /><span className="font-semibold text-rose-900">Perfumes</span></h3>
+                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Signature <br /><span className="font-semibold text-rose-900">Collections</span></h3>
                 <p className="text-lg text-stone-600 font-light leading-relaxed">
-                  Long-Lasting Luxury Fragrance. Our perfumes deliver rich and elegant fragrance for every occasion.
+                  Discover our premium range featuring original long-lasting perfumes and luxurious collections like Oucellent. Crafted for an unforgettable aura.
                 </p>
               </div>
 
@@ -254,7 +261,7 @@ export default function Product() {
       {/* Why Choose Us Section */}
       <section className="py-10 bg-[#111] text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-10">
-          <Image src="/p6.jpg" alt="Background" fill className="object-cover grayscale" />
+          <Image src="/fragods-castor-oils.webp" alt="Background" fill className="object-cover grayscale" />
         </div>
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16 relative z-10">
           <div className="text-center mb-15">
