@@ -25,10 +25,10 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className={`fixed w-full z-[100] transition-all duration-700 ${
+    <nav className={`fixed w-full z-[100] transition-all duration-700 border-b-[3px] ${
       scrolled 
-        ? "bg-white/95 backdrop-blur-xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] py-2 md:py-4" 
-        : "bg-transparent py-3 md:py-8"
+        ? "bg-white/95 backdrop-blur-xl shadow-sm py-2 md:py-4 border-rose-500" 
+        : "bg-transparent py-3 md:py-8 border-transparent"
     }`}>
       <div className="max-w-[1600px] mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex justify-between items-center">

@@ -29,7 +29,7 @@ export default function Product() {
   return (
     <div className="flex flex-col min-h-screen bg-[#faf9f8] font-sans overflow-x-hidden">
       {/* Header Banner */}
-      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[45vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="/fragods-spana.webp"
@@ -58,20 +58,20 @@ export default function Product() {
       </section>
 
       {/* Rose Water Section */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={slideIn}
-              className="relative order-2 lg:order-1"
+              className="relative order-2 lg:order-1 w-full max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto"
             >
-              <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-stone-50 bg-[#f9f9f9]">
-                <Image src="/fragods-air-freshner.webp" alt="Air Freshener" fill className="object-contain p-6 rounded-[20px]" />
+              <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-[10px] border-stone-50 bg-[#f9f9f9]">
+                <Image src="/fragods-air-freshner.webp" alt="Air Freshener" fill className="object-contain p-4 rounded-[20px]" />
               </div>
-              <div className="absolute -top-10 -right-10 w-48 h-48 bg-rose-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-rose-100 rounded-full blur-3xl opacity-50 -z-10"></div>
             </motion.div>
 
             <motion.div
@@ -79,38 +79,44 @@ export default function Product() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeIn}
-              className="space-y-10 order-1 lg:order-2"
+              className="space-y-6 order-1 lg:order-2"
             >
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] text-xs">
                   <Wind className="w-5 h-5" />
                   Home Fragrance
                 </div>
-                 <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Air Freshener <br /><span className="font-semibold text-rose-900">Refreshing Aura</span></h3>
-                <p className="text-lg text-stone-600 font-light leading-relaxed">
+                <h3 className="text-xl md:text-2xl font-medium text-stone-900 leading-tight tracking-tighter italic">Air Freshener <br /><span className="font-bold text-rose-900">Refreshing Aura</span></h3>
+                <p className="text-base text-stone-700 font-normal leading-relaxed">
                   Transform your space with our premium Air Freshener. Elegantly formulated to neutralize odors and replace them with a delightful, long-lasting scent.
                 </p>
+
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-6">
-                <div className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                <div className="space-y-4">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
-                  <ul className="space-y-4">
+                  <ul className="space-y-2">
                     {["Eliminates odors instantly", "Long-lasting fragrance", "Creates a welcoming atmosphere", "Safe for daily indoor use"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <CheckCircle2 className="w-5 h-5 text-rose-500 shrink-0" />
-                        <span>{item}</span>
+                        <span className="font-medium text-stone-800">{item}</span>
                       </li>
                     ))}
                   </ul>
+                  <div className="pt-4 w-full md:w-auto text-center md:text-left">
+                    <Link href="/contact" className="inline-flex bg-stone-900 border-2 border-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-[0.2em] text-[10px] hover:bg-white hover:text-stone-900 transition-all duration-300 shadow-xl shadow-stone-200">
+                      Bulk Enquiry
+                    </Link>
+                  </div>
                 </div>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
-                  <ul className="space-y-4">
+                  <ul className="space-y-2">
                     {["Shake well before use", "Spray towards the center of room", "Avoid direct contact with fabrics"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <Zap className="w-5 h-5 text-amber-500 shrink-0" />
-                        <span>{item}</span>
+                        <span className="font-medium text-stone-800">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -122,50 +128,55 @@ export default function Product() {
       </section>
 
       {/* Glycerine Section */}
-      <section className="py-24 bg-[#faf9f8]">
+      <section className="py-12 md:py-16 bg-[#faf9f8]">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeIn}
-              className="space-y-10"
+              className="space-y-6"
             >
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <div className="flex items-center gap-3 text-blue-600 font-bold tracking-[0.3em] text-xs">
                   <Droplets className="w-5 h-5" />
                   Premium Quality
                 </div>
-                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Liquid <br /><span className="font-semibold text-blue-900">Paraffin</span></h3>
-                <p className="text-lg text-stone-600 font-light leading-relaxed">
+                <h3 className="text-xl md:text-2xl font-medium text-stone-900 leading-tight tracking-tighter italic">Liquid <br /><span className="font-bold text-blue-900">Paraffin</span></h3>
+                <p className="text-base text-stone-700 font-normal leading-relaxed">
                   Highly refined Liquid Paraffin crafted for purity and consistency. Ideal for specialized treatments and retaining extreme skin moisture.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-6">
-                <div className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                <div className="space-y-4">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Key Benefits</h4>
-                  <ul className="space-y-4">
+                  <ul className="space-y-2">
                     {["Acts as a strong emollient", "Prevents severe skin dryness", "Protects against moisture loss", "Highly refined and pure"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0" />
-                        <span>{item}</span>
+                        <span className="font-medium text-stone-800">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">How to Use</h4>
-                  <ul className="space-y-4">
+                  <ul className="space-y-2">
                     {["Apply to extremely dry patches", "Use as directed by experts", "Mix with creams if required"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <Zap className="w-5 h-5 text-amber-500 shrink-0" />
-                        <span>{item}</span>
+                        <span className="font-medium text-stone-800">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
+              </div>
+              <div className="pt-4 w-full md:w-auto text-center md:text-left">
+                <Link href="/contact" className="inline-flex bg-stone-900 border-2 border-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-[0.2em] text-[10px] hover:bg-[#faf9f8] hover:text-stone-900 transition-all duration-300 shadow-xl shadow-stone-200">
+                  Bulk Enquiry
+                </Link>
               </div>
             </motion.div>
 
@@ -174,41 +185,41 @@ export default function Product() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeIn}
-              className="relative"
+              className="relative w-full max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto"
             >
-              <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-white bg-[#f9f9f9]">
-                <Image src="/fragods-liquid-paraffin.webp" alt="Liquid Paraffin" fill className="object-contain p-6 rounded-[20px]" />
+              <div className="aspect-square rounded-[3rem] overflow-hidden shadow-2xl border-[10px] border-white bg-[#f9f9f9]">
+                <Image src="/fragods-liquid-paraffin.webp" alt="Liquid Paraffin" fill className="object-contain p-4 rounded-[20px]" />
               </div>
-              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Perfumes Section */}
-      <section className="py-24 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={slideIn}
-              className="relative order-2 lg:order-1"
+              className="relative order-2 lg:order-1 w-full max-w-[280px] sm:max-w-sm lg:max-w-md mx-auto"
             >
-              <div className="aspect-[4/3] sm:aspect-square rounded-[4rem] overflow-hidden shadow-2xl border-[15px] border-stone-50 bg-[#fbfbfb] flex items-center justify-center relative group p-6">
+              <div className="aspect-[4/3] sm:aspect-square rounded-[3rem] overflow-hidden shadow-xl border-[10px] border-stone-50 bg-[#fbfbfb] flex items-center justify-center relative group p-4">
                 <div className="absolute inset-0 bg-gradient-to-tr from-rose-50/50 via-stone-50/50 to-stone-100/50 opacity-80"></div>
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-gradient-to-br from-rose-200/30 to-amber-100/30 rounded-full blur-3xl"></div>
-                
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-56 bg-gradient-to-br from-rose-200/30 to-amber-100/30 rounded-full blur-3xl"></div>
+
                 <div className="relative w-[45%] h-[85%] z-10 transform -translate-y-4 group-hover:scale-105 group-hover:-translate-y-6 transition-all duration-700 drop-shadow-2xl">
                   <Image src="/fragods-original-perfume.webp" alt="Original Perfume" fill className="object-contain" />
                 </div>
-                
+
                 <div className="relative w-[45%] h-[80%] z-20 transform translate-y-6 -ml-6 group-hover:scale-105 group-hover:translate-y-4 group-hover:translate-x-2 transition-all duration-700 drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)]">
                   <Image src="/fragods-oucellent.webp" alt="Oucellent" fill className="object-contain" />
                 </div>
               </div>
-              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-rose-100/50 rounded-full blur-3xl opacity-60 -z-10"></div>
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-rose-100/50 rounded-full blur-3xl opacity-60 -z-10"></div>
             </motion.div>
 
             <motion.div
@@ -216,42 +227,47 @@ export default function Product() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeIn}
-              className="space-y-10 order-1 lg:order-2"
+              className="space-y-6 order-1 lg:order-2"
             >
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <div className="flex items-center gap-3 text-rose-600 font-bold tracking-[0.3em] text-xs">
                   <Wind className="w-5 h-5" />
                   Luxury Fragrance & Oils
                 </div>
-                <h3 className="text-xl md:text-3xl font-light text-stone-900 leading-tight tracking-tighter italic">Signature <br /><span className="font-semibold text-rose-900">Collections</span></h3>
-                <p className="text-lg text-stone-600 font-light leading-relaxed">
+                <h3 className="text-xl md:text-2xl font-medium text-stone-900 leading-tight tracking-tighter italic">Signature <br /><span className="font-bold text-rose-900">Collections</span></h3>
+                <p className="text-base text-stone-700 font-normal leading-relaxed">
                   Discover our premium range featuring original long-lasting perfumes and luxurious collections like Oucellent. Crafted for an unforgettable aura.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 pt-6">
-                <div className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                <div className="space-y-4">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Fragrance Notes</h4>
-                  <ul className="space-y-4">
+                  <ul className="space-y-2">
                     {["Floral (Rose, Jasmine)", "Woody (Oud, Sandalwood)", "Fresh & Citrus"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <Sparkles className="w-5 h-5 text-rose-500 shrink-0" />
-                        <span>{item}</span>
+                        <span className="font-medium text-stone-800">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <h4 className="font-bold text-stone-900 tracking-widest text-xs border-b border-stone-100 pb-3">Usage Tips</h4>
-                  <ul className="space-y-4">
+                  <ul className="space-y-2">
                     {["Apply on pulse points", "Do not rub after applying", "Store in a cool place"].map((item, i) => (
                       <li key={i} className="flex items-start gap-3 text-stone-600 text-sm">
                         <Zap className="w-5 h-5 text-amber-500 shrink-0" />
-                        <span>{item}</span>
+                        <span className="font-medium text-stone-800">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
+              </div>
+              <div className="pt-4 w-full md:w-auto text-center md:text-left">
+                <Link href="/contact" className="inline-flex bg-stone-900 border-2 border-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-[0.2em] text-[10px] hover:bg-white hover:text-stone-900 transition-all duration-300 shadow-xl shadow-stone-200">
+                  Bulk Enquiry
+                </Link>
               </div>
             </motion.div>
           </div>

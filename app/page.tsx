@@ -14,7 +14,8 @@ import {
   Droplets,
   Sparkles,
   Heart,
-  Award
+  Award,
+  Wind
 } from "lucide-react";
 
 const fadeIn: Variants = {
@@ -77,10 +78,62 @@ export default function Home() {
     return () => clearInterval(interval);
   }, [nextSlide]);
 
+  const products = [
+    {
+      name: "Air Freshener",
+      sub: "(Long Lasting)",
+      tag: "Refreshing Aroma",
+      icon: Sparkles,
+      image: "/fragods-air-freshner.webp",
+      color: "rose"
+    },
+    {
+      name: "Liquid Paraffin",
+      sub: "",
+      tag: "Pure Formulation",
+      icon: Droplets,
+      image: "/fragods-liquid-paraffin.webp",
+      color: "blue"
+    },
+    {
+      name: "Fragods Oucellent",
+      sub: "",
+      tag: "Luxury Range",
+      icon: Sparkles,
+      image: "/fragods-oucellent.webp",
+      color: "amber"
+    },
+    {
+      name: "Original Perfume",
+      sub: "",
+      tag: "Signature Scent",
+      icon: Wind,
+      image: "/fragods-original-perfume.webp",
+      color: "rose"
+    },
+    {
+      name: "Castor Oil",
+      sub: "",
+      tag: "Natural Care",
+      icon: Leaf,
+      image: "/fragods-castor-oils.webp",
+      color: "green"
+    },
+    {
+      name: "Rose Water",
+      sub: "",
+      tag: "Hydrating Glow",
+      icon: Droplets,
+      image: "/fragods-oucellent.webp",
+      color: "rose"
+    }
+  ];
+
   return (
     <div className="flex flex-col min-h-screen bg-[#faf9f8] font-sans overflow-x-hidden">
       {/* Hero Section Slider */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden bg-[#1c1917]">
+      <section className="relative h-[80vh] min-h-[470px] flex items-center justify-center overflow-hidden bg-[#1c1917]">
+
         <AnimatePresence>
           <motion.div
             key={currentSlide}
@@ -178,21 +231,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Signature Collection Section */}
-      <section className="py-8 md:py-12 bg-white relative">
-        <div className="max-w-[1600px] mx-auto px-6 sm:px-12 lg:px-20">
+      <section className="py-12 md:py-20 bg-white relative">
+        <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={fadeIn}
-            className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6"
+            className="flex flex-col md:flex-row md:items-end justify-between mb-15 gap-6"
           >
-            <div className="max-w-3xl">
+            <div className="max-w-3xl px-4">
               <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em] mb-4">Discover</h2>
-              <h3 className="text-2xl md:text-4xl font-light text-stone-900 leading-tight italic">Our Signature <br /><span className="font-semibold text-rose-900 italic">Collection</span></h3>
+              <h3 className="text-2xl md:text-5xl font-light text-stone-900 leading-tight italic">Our Signature <br /><span className="font-semibold text-rose-900 italic">Collection</span></h3>
             </div>
-            <Link href="/product" className="group flex items-center gap-4 text-stone-900 font-bold tracking-[0.2em] text-xs border-b-2 border-stone-200 pb-2 hover:border-rose-500 transition-all duration-300">
+            <Link href="/product" className="group flex items-center gap-4 text-stone-900 font-bold tracking-[0.2em] text-xs border-b-2 border-stone-200 pb-2 hover:border-rose-500 transition-all duration-300 mr-4">
               View All Products <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
             </Link>
           </motion.div>
@@ -202,67 +254,51 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10"
+            className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4"
           >
-            {/* Product 1 */}
-            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,100,100,0.18)] hover:border-rose-100 transition-all duration-700">
-              <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
-                <div className="relative h-full w-full rounded-[2rem] overflow-hidden bg-[#f9f9f9]">
-                  <Image src="/fragods-air-freshner.webp" alt="Air Freshener" fill className="object-contain p-4 group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
+            {products.map((product, idx) => (
+              <motion.div
+                key={idx}
+                variants={fadeIn}
+                className={`group flex flex-col bg-white border border-stone-100 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-700 ${product.color === "rose" ? "hover:border-rose-200" :
+                  product.color === "blue" ? "hover:border-blue-200" :
+                    product.color === "green" ? "hover:border-emerald-200" :
+                      "hover:border-amber-200"
+                  }`}
+              >
+                <div className="relative h-[200px] sm:h-[220px] w-full overflow-hidden p-2 md:p-3">
+                  <div className="relative h-full w-full rounded-[1.5rem] overflow-hidden bg-[#f9f9f9]">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-contain p-4 group-hover:scale-110 transition-transform duration-1000 ease-in-out"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="px-6 pb-8 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-2 text-rose-600 mb-3">
-                  <Sparkles className="w-4 h-4" />
-                  <span className="text-xs font-bold tracking-[0.3em]">Refreshing Aroma</span>
+                <div className="px-4 pb-5 flex-1 flex flex-col text-center">
+                  <div className={`flex items-center justify-center gap-2 mb-2 ${product.color === "rose" ? "text-rose-600" :
+                    product.color === "blue" ? "text-blue-600" :
+                      product.color === "green" ? "text-emerald-600" :
+                        "text-amber-600"
+                    }`}>
+                    <product.icon className="w-3 h-3" />
+                    <span className="text-[8px] font-bold tracking-[0.2em] uppercase">{product.tag}</span>
+                  </div>
+                  <h4 className="text-xs md:text-sm font-bold text-stone-900 mb-3 leading-tight min-h-[40px] flex flex-col justify-center">
+                    {product.name} {product.sub && <span className="text-[10px] font-light text-stone-400 italic block mt-0.5">{product.sub}</span>}
+                  </h4>
+                  <Link href="/product" className="mt-auto bg-stone-900 text-white px-4 py-2 rounded-full font-bold tracking-widest text-[8px] hover:bg-rose-600 transition-all duration-300 shadow-md">
+                    Details
+                  </Link>
                 </div>
-                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Air Freshener <span className="text-sm font-light text-stone-400 italic">(Long Lasting)</span></h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-rose-600 transition-all duration-300 shadow-xl">
-                  Product Details
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Product 2 */}
-            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(100,150,255,0.18)] hover:border-blue-100 transition-all duration-700">
-              <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
-                <div className="relative h-full w-full rounded-[2rem] overflow-hidden bg-[#f9f9f9]">
-                  <Image src="/fragods-liquid-paraffin.webp" alt="Liquid Paraffin" fill className="object-contain p-4 group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
-                </div>
-              </div>
-              <div className="px-6 pb-8 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-2 text-blue-600 mb-3">
-                  <Droplets className="w-4 h-4" />
-                  <span className="text-xs font-bold tracking-[0.3em]">Pure Formulation</span>
-                </div>
-                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Liquid Paraffin</h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-blue-600 transition-all duration-300 shadow-xl">
-                  Product Details
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Product 3 */}
-            <motion.div variants={fadeIn} className="group flex flex-col bg-white border border-stone-100 rounded-[3rem] overflow-hidden shadow-sm hover:shadow-[0_60px_100px_-20px_rgba(255,180,50,0.18)] hover:border-amber-100 transition-all duration-700">
-              <div className="relative h-[280px] sm:h-[320px] w-full overflow-hidden p-4">
-                <div className="relative h-full w-full rounded-[2rem] overflow-hidden bg-[#f9f9f9]">
-                  <Image src="/fragods-oucellent.webp" alt="Fragods Oucellent" fill className="object-contain p-4 group-hover:scale-110 transition-transform duration-1000 ease-in-out" />
-                </div>
-              </div>
-              <div className="px-6 pb-8 flex-1 flex flex-col text-center">
-                <div className="flex items-center justify-center gap-2 text-amber-600 mb-3">
-                  <Sparkles className="w-4 h-4" />
-                  <span className="text-xs font-bold tracking-[0.3em]">Luxury Range</span>
-                </div>
-                <h4 className="text-lg font-bold text-stone-900 mb-4 leading-tight whitespace-nowrap">Fragods Oucellent</h4>
-                <Link href="/product" className="mt-auto bg-stone-900 text-white px-8 py-3 rounded-full font-bold tracking-widest text-[10px] hover:bg-amber-600 transition-all duration-300 shadow-xl">
-                  Product Details
-                </Link>
-              </div>
-            </motion.div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>
+
+
 
       {/* Visionary Section */}
       <section className="py-10 md:py-24 bg-[#f4f1ed]">
