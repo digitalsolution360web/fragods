@@ -88,12 +88,13 @@ export default function Footer() {
                                 <div className="flex items-start gap-4 group">
                                     <MapPin className="w-5 h-5 text-rose-500 shrink-0" />
                                     <span className="text-[12px] font-bold text-stone-400 leading-relaxed tracking-widest">
-                                        Fragods HQ, Indore, MP, India
+                                      Fragrance Mirror, Dist. Jamui, PIN – 811307, India
                                     </span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <Phone className="w-5 h-5 text-rose-500 shrink-0" />
-                                    <span className="text-[12px] font-bold text-stone-400 tracking-widest">+91 91310 40182</span>
+                                    {/* <span className="text-[12px] font-bold text-stone-400 tracking-widest">+91 91310 40182</span> */}
+                                    <span className="text-[12px] font-bold text-stone-400 tracking-widest">+91 70112 93273</span>
                                 </div>
                                 <div className="flex items-center gap-4 group">
                                     <Mail className="w-5 h-5 text-rose-500 shrink-0" />

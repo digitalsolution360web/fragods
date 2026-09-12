@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppWidget() {
-  const whatsappNumber = "+919876543210"; // Placeholder number
+  const whatsappNumber = "+917011293273"; // Placeholder number
   const message = "Hi Fragods, I'm interested in your products.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 

@@ -119,14 +119,14 @@ export default function Home() {
       image: "/fragods-castor-oils.webp",
       color: "green"
     },
-    {
-      name: "Rose Water",
-      sub: "",
-      tag: "Hydrating Glow",
-      icon: Droplets,
-      image: "/fragods-oucellent.webp",
-      color: "rose"
-    }
+    // {
+    //   name: "Rose Water",
+    //   sub: "",
+    //   tag: "Hydrating Glow",
+    //   icon: Droplets,
+    //   image: "/fragods-oucellent.webp",
+    //   color: "rose"
+    // }
   ];
 
   return (
@@ -254,7 +254,7 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4"
           >
             {products.map((product, idx) => (
               <motion.div

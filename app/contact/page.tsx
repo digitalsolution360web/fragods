@@ -60,7 +60,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="text-xs font-bold text-stone-900 tracking-[0.3em] mb-4">Visit Our Essence</h4>
-                                        <p className="text-xl text-stone-600 font-light leading-relaxed">Fragods Headquarters,<br />Indore, Madhya Pradesh, India</p>
+                                        <p className="text-xl text-stone-600 font-light leading-relaxed">Fragrance Mirror, <br />Dist. Jamui, PIN – 811307, India</p>
                                     </div>
                                 </div>
 
@@ -70,7 +70,7 @@ export default function Contact() {
                                     </div>
                                     <div>
                                         <h4 className="text-xs font-bold text-stone-900 tracking-[0.3em] mb-4">Call Our Experts</h4>
-                                        <p className="text-xl text-stone-600 font-light">+91 91310 40182</p>
+                                        <p className="text-xl text-stone-600 font-light">+91 70112 93273</p>
                                         <p className="text-sm text-rose-500 font-bold mt-3 tracking-widest">Mon-Sun: 10:00 AM - 08:00 PM</p>
                                     </div>
                                 </div>
