@@ -314,9 +314,17 @@ export default function Home() {
               <div className="space-y-6">
                 <h2 className="text-[10px] font-bold text-rose-600 tracking-[0.4em]">The Vision</h2>
                 <h3 className="text-3xl md:text-5xl font-light text-stone-900 leading-tight">Your Daily <br /><span className="font-semibold text-rose-900 italic">Beauty & Fragrance</span> Partner</h3>
-                <p className="text-lg text-stone-600/90 leading-relaxed font-light max-w-2xl">
+                {/* <p className="text-lg text-stone-600/90 leading-relaxed font-light max-w-2xl">
                   Fragods is passionate about creating products that combine purity, care, and elegance. Our range is designed to enhance your natural beauty while giving you a refreshing and long-lasting experience.
-                </p>
+                </p> */}
+                <p className="text-lg text-stone-600/90 leading-relaxed font-light max-w-2xl">
+                Fragods is passionate about creating products that combine purity, care, and elegance. Our
+                <span className="relative inline-block font-semibold text-rose-900 italic mx-1">
+                  Gulab Jal
+                  <span className="absolute left-0 right-0 bottom-0 h-2 bg-rose-200/70 -z-0 rounded-full"></span>
+                </span>
+                brings a refreshing touch to your everyday beauty routine, helping your skin feel fresh, soft, and naturally revitalized.
+              </p>
               </div>
 
               <div className="pt-10 border-t border-stone-300/50">
@@ -362,6 +370,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-2xl font-light text-stone-800 leading-relaxed italic">&quot;Trusted by thousands for their daily beauty and fragrance routine.&quot;</p>
+                
               </div>
             </motion.div>
           </div>
